@@ -1,0 +1,353 @@
+/* flex box */
+.parent {
+  display: flex;
+  width: 98vw;
+  margin:0;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.child {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+}
+
+/* general style */
+h1 {
+  font-family: 'Vidaloka', serif;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* section style */
+.home, .about, .work, .books, .contact {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav style */
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 90vh;
+  justify-content: space-between;
+  margin: 3vw;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 2vh;
+  -webkit-transition: font-size 1s;
+   -moz-transition: font-size 1s;
+     -o-transition: font-size 1s;
+        transition: font-size 1s;
+}
+.nav a:hover {
+  font-size: 3vh;
+}
+
+#n1:hover {
+  color:#759ddd;
+}
+/* #home:target .nav> #n1 {
+  color:#759ddd;
+} */
+
+#n2:hover {
+  color:#03960c;
+}
+#n3:hover {
+  color:#f2cd29;
+}
+#n4:hover {
+  color:#c1015b;
+}
+#n5:hover {
+  color:#6a168e;
+}
+
+
+/* home style */
+.home {
+  justify-content: center;
+}
+.home h1 {
+  text-align: center;
+  font-size: 7vw;
+  margin: 0;
+}
+.home h2 {
+  margin: 0;
+  margin-top:1vh;
+  font-size: 2vw;
+  text-align: center;
+}
+
+/* image style */
+.img {
+  position: fixed;
+  z-index: 1;
+  width:10vw;
+}
+/* hover image styles and fucntion */
+.posview {
+  visibility: visible !important;
+}
+
+.pos1 {
+  background: url("img/b1.jpg") no-repeat center;
+}
+
+.pos2 {
+  background: url("img/b2.jpg") no-repeat center;
+}
+
+.pos3{
+  background: url("img/b3.jpg") no-repeat center;
+}
+
+.pos {
+  visibility: hidden;
+  position: fixed;
+  display: table;
+  width: 20vw;
+  height:20vh;
+  background-size: 100% auto;
+  z-index: 2;
+  font-size: 2vh;
+  text-align: center;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  opacity:0;
+}
+
+.pos:hover {
+  opacity:1;
+}
+
+.overlay {
+  display: table-cell;
+  vertical-align: middle;
+  width: 15vw;
+  padding-left:2vw;
+  padding-right:2vw;
+}
+
+#i00, #i01, #i05, #i06, #i07, #i08, #i014  /*animation for glyphs that reveal Pos Edge tips*/{
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+#i00, #i05, #i07, #i014 {
+  animation: shake 5s infinite both;
+}
+
+#i01, #i06, #i08 {
+  animation: shake2 5s infinite both;
+}
+
+#i00 /*home*/{
+  left: 15vw;
+  top:10vh;
+}
+
+#h00 {
+  left: 10vw;
+  top:10vh;
+}
+
+#i01 /*about*/ {
+  top:110vh;
+  left:75vw;
+}
+
+#h01 {
+    top:110vh;
+    left:70vw;
+}
+
+#i05 /*work*/ {
+  top:200vh;
+  left:75vw;
+}
+#h05 {
+  top:200vh;
+  left:70vw;
+}
+
+#i06 /*contact*/ {
+  top:470vh;
+  left:15vw;
+}
+
+#i06 /*contact*/ {
+  top:470vh;
+  left:15vw;
+}
+
+#h06 /*contact*/ {
+  top:470vh;
+  left:10vw;
+}
+
+#i07 /*contact*/ {
+  top:400vh;
+  left:80vw;
+}
+
+#h07 /*contact*/ {
+  top:400vh;
+  left:75vw;
+}
+
+#i08 /*work*/ {
+  top:273vh;
+  left:30vw;
+}
+
+#h08 /*work*/ {
+  top:273vh;
+  left:25vw;
+}
+
+#i09 /*about*/ {
+  top:175vh;
+  left:20vw;
+}
+
+#i010 /*home*/{
+  left:80vw;
+  top:63vh;
+}
+
+#i013 /*work*/ {
+  top:290vh;
+  left:20vw;
+}
+
+#i015 /*about*/ {
+  left:20;
+  top:160vh;
+}
+
+#i014 /*books*/ {
+  top:310vh;
+  left:80vw;
+}
+
+#h014 /*books*/ {
+  top:310vh;
+  left:75vw;
+}
+
+#i016 /*about*/ {
+  left:85vw;
+  top:260vh;
+}
+
+#i019 /*books*/ {
+  top:350vh;
+}
+
+#i020 /*contact*/ {
+  top:415vh;
+  left:85vw;
+}
+
+#i021 /*work*/ {
+  left:70vw;
+  top:220vh;
+}
+
+#i022 /*books*/ {
+  top:380vh;
+  left:70vw;
+}
+
+#i023 /*home*/ {
+  top:90vh;
+  left:30vw;
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  5% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  10% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  20%,100 {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake2 {
+  40% {
+    transform: translate3d(0, 0, 0);
+  }
+  45% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  55% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  0%,60%,100 {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+ /*about text formatting*/
+.a1 {
+  position:absolute;
+  top:30vh;
+  left:40vw;
+  width:40vw;
+}
+
+.a2 {
+  position: absolute;
+  top:60vh;
+  left:45vw;
+  width:35vw;
+}

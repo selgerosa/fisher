@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Sherri Fisher</title>
+  <meta name="description" content="todo">
+
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="main.css" title="style">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Vidaloka" rel="stylesheet">
+
+  <!-- js imports -->
+  <script src="jquery-3.3.1.min.js"></script>
+  <!-- full page snap js from https://github.com/alvarotrigo/fullPage.js/#fullpagejs -->
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <script src="jquery.fullPage.js"></script>
+  <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['home', 'about', 'work', 'books', 'contact'],
+				menu: '#nav',
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
+  <!-- metadata -->
+  <meta charset="UTF-8">
+  <!-- TODO: <meta name="keywords" content="">-->
+  <meta name="author" content="Selina Gerosa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="twitter:card" value="summary">
+  <meta property="og:title" content="Sherri Fisher">
+  <meta property="og:description" content="todo">
+  <meta property="og:image" content="todo">
+  <meta property="og:url" content="http://www.example.com/" />
+
+</head>
+<body>
+<div class="parent">
+  <div class="nav">
+    <p><a href="#home" id="n1">Home</a></p>
+    <p><a href="#about" id="n2">About</a></p>
+    <p><a href="#work" id="n3">Work</a></p>
+    <p><a href="#books" id="n4">Books</a></p>
+    <p><a href="#contact" id="n5">Contact</a></p>
+  </div>
+  <div class="child" id="fullpage">
+
+    <div class="home section">
+      <div class="pos pos1" id="h00" onmouseout="hide('h00')" >
+        <div class="overlay">
+          <p>Notice what’s good. Collect more positive than negative.</p>
+        </div>
+      </div>
+      <img src="img/00.png" class="img" id="i00" onmouseover="show('h00')" alt="green smiling face with closed eyes, displays text on hover">
+      <img src="img/010.png" class="img" id="i010" alt="orange squigly line">
+      <img src="img/023.png" class="img" id="i023" alt="purple brush stroke">
+      <h1>Welcome!</h1>
+      <h2>Scroll to begin your journey.</h2>
+    </div>
+
+    <div class="about section">
+      <div class="pos pos2" id="h01" onmouseout="hide('h01')" >
+        <div class="overlay">
+          <p>Expect what’s good. Reframe what isn’t.</p>
+        </div>
+      </div>
+      <img src="img/01.png" class="img" id="i01" onmouseover="show('h01')" alt="green smiling face, displays text on hover">
+      <img src="img/09.png" class="img" id="i09" alt="blue squigly line">
+      <img src="img/015.png" class="img" id="i015" alt="green profile of a head with a star in the center">
+      <h1>Hi, I'm Sherri Fisher!</h1>
+      <p class="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor, leo non laoreet vestibulum, augue felis iaculis sem, eu venenatis nisi orci ac leo. Nulla at eros vel quam lacinia tincidunt. Ut ante mauris, consectetur eu dapibus quis, fermentum quis purus. Donec in ante leo. Nam suscipit venenatis finibus. Sed vehicula dui quis pharetra posuere. Aliquam varius risus lacus, eget commodo felis mattis et. Etiam ut tincidunt sapien, a sodales purus.</p>
+      <p class="a2">Fusce accumsan mi a lacus fermentum, eget lobortis dui dapibus. Mauris non blandit elit. Duis porta consectetur urna eget facilisis. Ut non elit mauris. Aenean maximus diam at viverra accumsan. Ut gravida laoreet viverra. Cras blandit facilisis fermentum. Donec scelerisque venenatis metus et semper. Ut ut efficitur turpis. Fusce finibus metus eu nunc iaculis, vitae ornare elit rhoncus. Maecenas ornare blandit ligula sit amet egestas. Nulla nec pulvinar nisi. Mauris tincidunt mauris ac sem semper, ut maximus odio placerat. Nullam iaculis nisi odio, quis pretium nunc consectetur ac.</p>
+    </div>
+
+    <div class="work section">
+      <div class="pos pos3" id="h05" onmouseout="hide('h05')" >
+        <div class="overlay">
+          <p>Get more of what’s good about you. Develop new strengths.</p>
+        </div>
+      </div>
+      <div class="pos pos1" id="h08" onmouseout="hide('h08')" >
+        <div class="overlay">
+          <p>Develop solid relationships. Be grateful, forgiving and kind.</p>
+        </div>
+      </div>
+      <img src="img/021.png" class="img" id="i021" alt="yellow zig zag line">
+      <img src="img/05.png" class="img" onmouseover="show('h05')" id="i05" alt="orange sun smiling with closed eyes, displays text on hover">
+      <img src="img/013.png" class="img" id="i013" alt="purple squigly line">
+      <img src="img/016.png" class="img" id="i016" alt="green rounded star">
+      <img src="img/08.png" class="img" onmouseover="show('h08')" id="i08" alt="yellow smiling face with closed eyes, displays text on hover">
+      <p>Poking fun at the symptoms and how parents think that THAT is the problems, but Sherri doesn’t believe that those things are the problems. The Symptoms allow sherri to see that person's strengths. Parents reading this formal about will learn that they have discovered they have found something special. Parents will stop their assumptions and learn too.
+</p>
+    </div>
+
+    <div class="books section">
+      <div class="pos pos2" id="h014" onmouseout="hide('h014')" >
+        <div class="overlay">
+          <p>Desire what’s good. Manage obstacles to success.</p>
+        </div>
+      </div>
+      <img src="img/022.png" class="img" id="i022" alt="yellow paint stroke">
+      <img src="img/014.png" class="img" onmouseover="show('h014')" id="i014" alt="blue smiley face">
+      <img src="img/019.png" class="img" id="i019" alt="purple zig zag line">
+      <p>book promo</p>
+    </div>
+
+    <div class="contact section">
+      <div class="pos pos2" id="h07" onmouseout="hide('h07')" >
+        <div class="overlay">
+          <p>Plan for and stick with what’s good. Unleash the power of YET.</p>
+        </div>
+      </div>
+      <div class="pos pos3" id="h06" onmouseout="hide('h06')" >
+        <div class="overlay">
+          <p>Apply strengths and mindfulness. Invest in shared experiences.</p>
+        </div>
+      </div>
+      <img src="img/06.png" class="img" onmouseover="show('h06')" id="i06" alt="green smiling face, displays text on hover">
+      <img src="img/07.png" class="img" onmouseover="show('h07')" id="i07" alt="purple smiling face, displays text on hover">
+      <img src="img/020.png" class="img" id="i020" alt="green zig zag line">
+      <p>links to so media</p>
+    </div>
+
+  </div>
+</div>
+<script>
+function show(textid) {
+  var postext = document.getElementById(textid)
+  postext.classList.add("posview");
+}
+
+function hide(textid) {
+  var postext = document.getElementById(textid);
+  postext.classList.remove("posview");
+}
+</script>
+
+</body>
+</html>
