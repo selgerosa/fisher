@@ -20,6 +20,9 @@
 h1 {
   font-family: 'Vidaloka', serif;
 }
+p {
+  margin: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -55,29 +58,33 @@ body {
         transition: font-size 1s;
 }
 .nav a:hover {
+  font-size: 3vh !important;
+}
+
+#n1 {
+  color:#759ddd;
   font-size: 3vh;
 }
 
 #n1:hover {
-  color:#759ddd;
+  color:#759ddd !important;
 }
-/* #home:target .nav> #n1 {
-  color:#759ddd;
-} */
-
 #n2:hover {
-  color:#03960c;
+  color:#03960c !important;
 }
 #n3:hover {
-  color:#f2cd29;
+  color:#f2cd29 !important;
 }
 #n4:hover {
-  color:#c1015b;
+  color:#c1015b !important;
 }
 #n5:hover {
-  color:#6a168e;
+  color:#6a168e !important;
 }
 
+#home:target p {
+  color:#759ddd !important;
+}
 
 /* home style */
 .home {
