@@ -260,9 +260,9 @@ body {
   left:75vw;
 }
 
-#i016 /*about*/ {
+#i016 /*work*/ {
   left:85vw;
-  top:260vh;
+  top:278vh;
 }
 
 #i019 /*books*/ {
@@ -357,7 +357,21 @@ body {
   width:35vw;
 }
 
+.a3 {
+  position: absolute;
+  top:40vh;
+  left:25vw;
+  width:55vw;
+}
+
+
 @media all and (max-width:425px) {/*maybe more*/
+  .home h1 {
+    font-size: 12vw;
+  }
+  .home h2 {
+    font-size: 3vw;
+  }
   .img {
     width: 25vw;
   }
@@ -371,7 +385,7 @@ body {
 
   #h00 {
     left: 10vw;
-    top:10vh;
+    top:7vh;
   }
 
   #i01 /*about*/ {
@@ -380,7 +394,7 @@ body {
   }
 
   #h01 {
-      top:110vh;
+      top:107vh;
       left:65vw;
   }
 
@@ -399,7 +413,7 @@ body {
   }
 
   #h06 /*contact*/ {
-    top:480vh;
+    top:477vh;
     left:0vw;
   }
 
@@ -409,12 +423,12 @@ body {
   }
 
   #h07 /*contact*/ {
-    top:415vh;
+    top:413vh;
     left:55vw;
   }
 
   #i08 /*work*/ {
-    top:273vh;
+    top:275vh;
     left:10vw;
   }
 
@@ -424,12 +438,12 @@ body {
   }
 
   #i09 /*about*/ {
-    top:175vh;
+    top:185vh;
     left:20vw;
   }
 
   #i010 /*home*/{
-    left:80vw;
+    left:76vw;
     top:63vh;
   }
 
@@ -449,13 +463,13 @@ body {
   }
 
   #h014 /*books*/ {
-    top:310vh;
+    top:307vh;
     left:60vw;
   }
 
-  #i016 /*about*/ {
-    left:60vw;
-    top:260vh;
+  #i016 /*work*/ {
+    left:55vw;
+    top:285vh;
   }
 
   #i019 /*books*/ {
@@ -470,7 +484,7 @@ body {
 
   #i021 /*work*/ {
     left:70vw;
-    top:225vh;
+    top:220vh;
   }
 
   #i022 /*books*/ {
@@ -490,7 +504,7 @@ body {
   .about {
     flex-direction: row;
   }
-  .a1,.a2 {
+  .a1,.a2,.a3 {
     position: relative;
     left:0vw;
     top:0vh;
