@@ -25,6 +25,9 @@ p {
   margin: 0;
   font-size: 2vh;
 }
+img {
+  align-self:center;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -124,12 +127,16 @@ body {
  width: 45vw;
  top:35vh;
 }
-.bh {
+.bh,.bh2 {
  position: absolute;
  top: 20vh;
  width: 45vw;
  left: 35vw;
  margin-bottom: 1vh;
+}
+
+.bh2 {
+  top:50vh;
 }
 
 /* image style */
@@ -301,7 +308,8 @@ body {
 }
 
 #i019 /*books*/ {
-  top:350vh;
+  top:383vh;
+  left: 20vw;
 }
 
 #i020 /*contact*/ {
@@ -323,6 +331,11 @@ body {
   top:90vh;
   left:30vw;
 }
+
+.book_modal {
+
+}
+
 
 @keyframes fadein {
     0% {
@@ -388,7 +401,7 @@ body {
   h1 {
     font-size: 3vh;
   }
-  .bh,.bp {
+  .bh,.bh2,.bp {
     width: 55vw;
   }
 
@@ -489,7 +502,7 @@ body {
     width: 90vw;
   }
 
-  .bh,.bp {
+  .bh,.bh2,.bp {
     width: 90vw;
     left: 3vw;
   }
@@ -580,7 +593,7 @@ body {
   }
 
   #i014 /*books*/ {
-    top:310vh;
+    top:305vh;
     left:65vw;
   }
 

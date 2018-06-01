@@ -137,10 +137,19 @@ PERMA theory of well-being. </p>
       <img src="img/022.png" class="img" id="i022" alt="yellow paint stroke">
       <img src="img/014.png" class="img" onmouseover="show('h014')" id="i014" alt="blue smiley face">
       <img src="img/019.png" class="img" id="i019" alt="purple zig zag line">
-      <img src="img/unleash_cover.jpg" class="img2" alt="Unleash Your Epic Self book cover">
-      <h1 class="bh">Unleash Your Epic Self: The Guide to Crushing it at School, Work and Life</h1>
-      <p class="bp">This book incorporates the most powerful personal change research and activities from the exciting science of Positive Psychology and makes them easy to understand and implement. The dynamic 36-week book-journal-workbook includes engaging activities in a full-color experience with edgy graphics. It’s an excellent read, a place to learn and reflect, and a brilliant resource for parents, teens, and education professionals to grow their well-being skills by living them daily. Gain a deeper understanding of what gives you a sense of satisfaction and joy. Imagine and create your best future. Harness your strengths, manage procrastination and strengthen people connections. Rig your everyday decisions for greatness. Every activity is student and educator tested! <br><br>
-      Sherri Fisher MAPP, MEd has turned her work with at-risk students of all ages into a self-guided journey where the user can create new possibilities for change, action, and innovation. Unleash Your Epic Self teaches you to identify the root causes of success to intentionally construct a positive and more effective future in school, work and life.</p>
+      <div class="book_modal">
+        <img src="img/unleash_cover.jpg" class="img2" alt="Unleash Your Epic Self book cover">
+        <h1 class="bh">Unleash Your Epic Self: The Guide to Crushing it at School, Work and Life</h1>
+        <p class="bp">This book incorporates the most powerful personal change research and activities from the exciting science of Positive Psychology and makes them easy to understand and implement. The dynamic 36-week book-journal-workbook includes engaging activities in a full-color experience with edgy graphics. It’s an excellent read, a place to learn and reflect, and a brilliant resource for parents, teens, and education professionals to grow their well-being skills by living them daily. Gain a deeper understanding of what gives you a sense of satisfaction and joy. Imagine and create your best future. Harness your strengths, manage procrastination and strengthen people connections. Rig your everyday decisions for greatness. Every activity is student and educator tested! <br><br> Sherri Fisher MAPP, MEd has turned her work with at-risk students of all ages into a self-guided journey where the user can create new possibilities for change, action, and innovation. Unleash Your Epic Self teaches you to identify the root causes of success to intentionally construct a positive and more effective future in school, work and life.</p>
+      </div>
+      <div class="book_modal">
+        <img src="img/smart_cover.png" class="img2" alt="SMART Strengths book cover">
+        <h1 class="bp">SMART Strengths: Building Character, Resilience and Relationships in Youth.</h1>
+        <p class="bh2">Sherri is co-author of this popular positive education book. Transform your home and school with the SMART Strengths approach. Grade-leveled appendix of activities.</p>
+      </div>
+      <button class="bleft" onclick="change(-1);">&#10094;</button>
+      <button class="bright" onclick="change(1);">&#10095;</button>
+
     </div>
 
     <div class="contact section">
@@ -236,6 +245,24 @@ function navstyle(navid) {
     document.getElementById('n4').style.fontSize = "2vh";
     document.getElementById('n1').style.fontSize = "2vh";
   }
+}
+
+var modalIndex = 1;
+showModal(modalIndex);
+
+function change(n) {
+  showModal(modalIndex+=n);
+}
+
+function showModal(n) {
+  var i;
+  var x = document.getElementsByClassName("book_modal");
+  if (n > x.length) {modalIndex = 1}
+    if (n < 1) {modalIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[modalIndex-1].style.display = "flex";
 }
 </script>
 
