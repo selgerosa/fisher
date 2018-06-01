@@ -68,7 +68,6 @@ body {
   color:#759ddd;
   font-size: 3vh;
 }
-
 #n1:hover {
   color:#759ddd !important;
 }
@@ -95,7 +94,7 @@ body {
 }
 .home h1 {
   text-align: center;
-  font-size: 7vw;
+  font-size: 6vw;
   margin: 0;
 }
 .home h2 {
@@ -395,10 +394,6 @@ body {
     width: 55vw;
   }
 
-  .bh {
-    font-size: 4vh;
-  }
-
   .ah,.ap {
     left:50vw;
   }
@@ -481,6 +476,7 @@ body {
   .home h2 {
     font-size: 3vw;
   }
+
   .img {
     width: 25vw;
   }
@@ -496,16 +492,16 @@ body {
     top:0vh;
   }
 
+  .wp {
+    width: 90vw;
+  }
+
   .bh,.bp {
     width: 90vw;
     left: 3vw;
   }
   .bh {
-    top:2vh;
     font-size: 4vh;
-  }
-  .bp {
-    top:38vh;
   }
   .books .img2 {
     display: none;
