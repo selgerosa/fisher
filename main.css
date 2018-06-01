@@ -23,7 +23,7 @@ h1 {
 }
 p {
   margin: 0;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -105,12 +105,56 @@ body {
   text-align: center;
 }
 
+/*about text formatting*/
+.about p {
+ position:absolute;
+ top:40vh;
+ left:40vw;
+ width:40vw;
+}
+.about h1 {
+ position: absolute;
+ left: 40vw;
+ top:30vh;
+ width: 40vw;
+}
+/* work text */
+.work p{
+ position: absolute;
+ top:40vh;
+ left:25vw;
+ width:50vw;
+}
+/* books text */
+.books p {
+ position: absolute;
+ left: 35vw;
+ width: 45vw;
+ top:35vh;
+}
+.books h1 {
+ position: absolute;
+ top: 10vh;
+ width: 45vw;
+ left: 35vw;
+ margin-bottom: 1vh;
+}
+
 /* image style */
+.about .img2 {
+  width: 50vh;
+  left: 15vw;
+}
+.books .img2 {
+  width: 30vw;
+}
+/* glyphs */
 .img {
   position: fixed;
   z-index: 1;
   width:10vw;
 }
+
 /* hover image styles and fucntion */
 .posview {
   visibility: visible !important;
@@ -342,28 +386,90 @@ body {
     transform: translate3d(4px, 0, 0);
   }
 }
- /*about text formatting*/
-.a1 {
-  position:absolute;
-  top:30vh;
-  left:40vw;
-  width:40vw;
-}
 
-.a2 {
-  position: absolute;
-  top:60vh;
-  left:45vw;
-  width:35vw;
-}
 
-.a3 {
-  position: absolute;
-  top:40vh;
-  left:25vw;
-  width:55vw;
-}
+@media all and (max-width:768px) {
+  .home, .about, .work, .books, .contact {
+    width: 90vw;
+  }
+  .books h1,.books p {
+    width: 55vw;
+  }
+  .about h1,.about p {
+    left:50vw;
+  }
+  .about h1{
+    top:20vh;
+  }
 
+  .about .img2 {
+    width: 40vw;
+  }
+
+  .work p{
+    left:0vw;
+    top:0vh;
+  }
+
+  .nav {
+    flex-direction: row;
+    width:90vw;
+    height:auto;
+  }
+
+  .overlay p{
+    font-size: 1.5vh;
+  }
+
+  #h00 {
+    left: 10vw;
+    top:5vh;
+  }
+
+  #h01 {
+      top:105vh;
+      left:70vw;
+  }
+
+  #i05 /*work*/ {
+    top:210vh;
+    left:65vw;
+  }
+
+  #h05 {
+    top:205vh;
+    left:60vw;
+  }
+
+  #h06 /*contact*/ {
+    top:467vh;
+    left:10vw;
+  }
+
+  #i07 /*contact*/ {
+    top:410vh;
+    left:80vw;
+  }
+
+  #h07 /*contact*/ {
+    top:405vh;
+    left:75vw;
+  }
+
+  #h08 /*work*/ {
+    top:268vh;
+    left:25vw;
+  }
+
+  #h014 /*books*/ {
+    top:305vh;
+    left:75vw;
+  }
+
+  #i015 {
+    top:165vh;
+  }
+}
 
 @media all and (max-width:425px) {/*maybe more*/
   .home h1 {
@@ -375,6 +481,32 @@ body {
   .img {
     width: 25vw;
   }
+
+  .about .img2 {
+    left:0;
+    width: 70vw;
+  }
+  .about p,.about h1 {
+    width: 90vw;
+    position:relative;
+    left:0;
+    top:0vh;
+  }
+
+  .books h1,.books p {
+    width: 90vw;
+    left: 3vw;
+  }
+  .books h1 {
+    top:2vh;
+  }
+  .books p {
+    top:38vh;
+  }
+  .books .img2 {
+    display: none;
+  }
+
   .pos {
     width: 35vw;
   }
@@ -497,29 +629,7 @@ body {
     left:30vw;
   }
 }
-@media all and (max-width:768px) {
-  p {
-    font-size: 2vh;
-  }
-  .about {
-    flex-direction: row;
-  }
-  .a1,.a2,.a3 {
-    position: relative;
-    left:0vw;
-    top:0vh;
-    width: 70vw;
-  }
-  .nav {
-    flex-direction: row;
-    width:90vw;
-    height:auto;
-  }
 
-  .overlay p{
-    font-size: 1.5vh;
-  }
-}
 
 @media all and (min-width:1200px) {
   .a1,.a2 {
