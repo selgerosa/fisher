@@ -19,7 +19,7 @@
 /* general style */
 h1 {
   font-family: 'Vidaloka', serif;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 p {
   margin: 0;
@@ -97,12 +97,6 @@ body {
   font-size: 6vw;
   margin: 0;
 }
-.home h2 {
-  margin: 0;
-  margin-top:1vh;
-  font-size: 2vw;
-  text-align: center;
-}
 
 /*about text formatting*/
 .ap {
@@ -132,7 +126,7 @@ body {
 }
 .bh {
  position: absolute;
- top: 10vh;
+ top: 20vh;
  width: 45vw;
  left: 35vw;
  margin-bottom: 1vh;
@@ -273,7 +267,7 @@ body {
 }
 
 #i09 /*about*/ {
-  top:175vh;
+  top:190vh;
   left:20vw;
 }
 
@@ -288,8 +282,7 @@ body {
 }
 
 #i015 /*about*/ {
-  left:20;
-  top:160vh;
+  top:180vh;
 }
 
 #i014 /*books*/ {
@@ -387,8 +380,13 @@ body {
 
 
 @media all and (max-width:768px) {
+
   .home, .about, .work, .books, .contact {
     width: 90vw;
+  }
+
+  h1 {
+    font-size: 3vh;
   }
   .bh,.bp {
     width: 55vw;
@@ -397,16 +395,13 @@ body {
   .ah,.ap {
     left:50vw;
   }
-  .ah {
-    top:20vh;
-  }
 
   .about .img2 {
     width: 40vw;
   }
 
   .wp{
-    top:20vh;
+    top:30vh;
   }
 
   .nav {
@@ -465,17 +460,15 @@ body {
   }
 
   #i015 {
-    top:165vh;
+    top:175vh;
   }
 }
 
-@media all and (max-width:425px) {/*maybe more*/
+@media all and (max-width:500px) {/*maybe more*/
   .home h1 {
     font-size: 12vw;
   }
-  .home h2 {
-    font-size: 3vw;
-  }
+
 
   .img {
     width: 25vw;
@@ -500,9 +493,7 @@ body {
     width: 90vw;
     left: 3vw;
   }
-  .bh {
-    font-size: 4vh;
-  }
+
   .books .img2 {
     display: none;
   }
@@ -521,12 +512,12 @@ body {
   }
 
   #i01 /*about*/ {
-    top:110vh;
+    top:105vh;
     left:70vw;
   }
 
   #h01 {
-      top:107vh;
+      top:102vh;
       left:65vw;
   }
 
@@ -570,7 +561,7 @@ body {
   }
 
   #i09 /*about*/ {
-    top:185vh;
+    top:190vh;
     left:20vw;
   }
 
@@ -585,8 +576,7 @@ body {
   }
 
   #i015 /*about*/ {
-    left:20;
-    top:170vh;
+    top:180vh;
   }
 
   #i014 /*books*/ {
@@ -605,8 +595,7 @@ body {
   }
 
   #i019 /*books*/ {
-    top:350vh;
-    left:0vw;
+    display: none;
   }
 
   #i020 /*contact*/ {
@@ -620,7 +609,7 @@ body {
   }
 
   #i022 /*books*/ {
-    top:380vh;
+    top:390vh;
     left:70vw;
   }
 
