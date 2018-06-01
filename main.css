@@ -106,33 +106,32 @@ body {
 }
 
 /*about text formatting*/
-.about p {
+.ap {
  position:absolute;
  top:40vh;
  left:40vw;
  width:40vw;
 }
-.about h1 {
+.ah {
  position: absolute;
  left: 40vw;
  top:30vh;
  width: 40vw;
 }
 /* work text */
-.work p{
+.wp{
  position: absolute;
  top:40vh;
- left:25vw;
  width:50vw;
 }
 /* books text */
-.books p {
+.bp {
  position: absolute;
  left: 35vw;
  width: 45vw;
  top:35vh;
 }
-.books h1 {
+.bh {
  position: absolute;
  top: 10vh;
  width: 45vw;
@@ -392,13 +391,18 @@ body {
   .home, .about, .work, .books, .contact {
     width: 90vw;
   }
-  .books h1,.books p {
+  .bh,.bp {
     width: 55vw;
   }
-  .about h1,.about p {
+
+  .bh {
+    font-size: 4vh;
+  }
+
+  .ah,.ap {
     left:50vw;
   }
-  .about h1{
+  .ah {
     top:20vh;
   }
 
@@ -406,9 +410,8 @@ body {
     width: 40vw;
   }
 
-  .work p{
-    left:0vw;
-    top:0vh;
+  .wp{
+    top:20vh;
   }
 
   .nav {
@@ -486,21 +489,22 @@ body {
     left:0;
     width: 70vw;
   }
-  .about p,.about h1 {
+  .ah, .ap{
     width: 90vw;
     position:relative;
     left:0;
     top:0vh;
   }
 
-  .books h1,.books p {
+  .bh,.bp {
     width: 90vw;
     left: 3vw;
   }
-  .books h1 {
+  .bh {
     top:2vh;
+    font-size: 4vh;
   }
-  .books p {
+  .bp {
     top:38vh;
   }
   .books .img2 {
