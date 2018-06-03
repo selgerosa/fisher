@@ -6,7 +6,7 @@
 
   <!-- style -->
   <link rel="stylesheet" type="text/css" href="main.css" title="style">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Vidaloka" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Vidaloka" rel="stylesheet">
 
   <!-- js imports -->
   <script src="jquery-3.3.1.min.js"></script>
@@ -99,20 +99,23 @@
       <img src="img/01.png" class="img" id="i01" onmouseover="show('h01')" alt="green smiling face, displays text on hover">
       <img src="img/09.png" class="img" id="i09" alt="blue squigly line">
       <img src="img/015.png" class="img" id="i015" alt="green profile of a head with a star in the center">
-      <img src="img/sherri.jpg" class="img2" alt="picture of Sherri Fisher with green squigly line background">
-      <h1 class="ah">Hi, I'm Sherri Fisher!</h1>
-      <p class="ap">I see in you what will unleash your potential. Things that we believe about ourselves and the world are very powerful. Your current challenges are not a
-marker of your future ability to succeed. With me as your learning advocate and your ally, together we will unleash your most epic self.</p>
+      <div class="aouter">
+        <img src="img/sherri.jpg" class="img2" alt="picture of Sherri Fisher with green squigly line background">
+        <div class="ainner">
+          <h1 class="">Hi, I'm Sherri Fisher!</h1>
+          <p class="">I see in you what will unleash your potential. Things that we believe about ourselves and the world are very powerful. Your current challenges are not a marker of your future ability to succeed. With me as your learning advocate and your ally, together we will unleash your most epic self.</p>
+        </div>
+      </div>
     </div>
 
     <div class="work section">
-      <div class="pos pos3" id="h05" onmouseout="hide('h05')" >
+      <div class="pos pos1" id="h05" onmouseout="hide('h05')" >
         <div class="overlay">
           <p>Notice what’s good.</p>
           <p><nobr>Collect more positive<wbr> than negative.</nobr></p>
         </div>
       </div>
-      <div class="pos pos1" id="h08" onmouseout="hide('h08')" >
+      <div class="pos pos3" id="h08" onmouseout="hide('h08')" >
         <div class="overlay">
           <p>Develop solid relationships.</p>
           <p><nobr>Be grateful, forgiving,<wbr> and kind.</nobr></p>
@@ -123,8 +126,11 @@ marker of your future ability to succeed. With me as your learning advocate and 
       <img src="img/013.png" class="img" id="i013" alt="purple squigly line">
       <img src="img/016.png" class="img" id="i016" alt="green rounded star">
       <img src="img/08.png" class="img" onmouseover="show('h08')" id="i08" alt="yellow smiling face with closed eyes, displays text on hover">
-      <p class="wp">I began my professional career working with bright adolescents who struggled with learning, attention, and organization. When these students learned to magnify and leverage their strengths and identify their success patterns, they flourished in spite of their challenges. My clients have gone on to attend elite colleges, launch successful companies, and build flourishing relationships, careers, and businesses. I am the world’s first learning specialist to earn the University of Pennsylvania’s Master of Applied Positive Psychology (MAPP) degree, and I have the privilege to learn and train with the top researchers and practitioners in the field. My model for improving well-being, the POS-EDGE™®., is inspired by Martin Seligman’s
-PERMA theory of well-being. </p>
+      <div class="wouter">
+        <div class="winner">
+          <p class="wp">I began my professional career working with bright adolescents who struggled with learning, attention, and organization. When these students learned to magnify and leverage their strengths and identify their success patterns, they flourished in spite of their challenges. My clients have gone on to attend elite colleges, launch successful companies, and build flourishing relationships, careers, and businesses. I am the world’s first learning specialist to earn the University of Pennsylvania’s Master of Applied Positive Psychology (MAPP) degree, and I have the privilege to learn and train with the top researchers and practitioners in the field. My model for improving well-being, the POS-EDGE™®., is inspired by Martin Seligman’s PERMA theory of well-being. </p>
+        </div>
+      </div>
     </div>
 
     <div class="books section">
@@ -138,17 +144,50 @@ PERMA theory of well-being. </p>
       <img src="img/014.png" class="img" onmouseover="show('h014')" id="i014" alt="blue smiley face">
       <img src="img/019.png" class="img" id="i019" alt="purple zig zag line">
       <div class="book_modal">
-        <img src="img/unleash_cover.jpg" class="img2" alt="Unleash Your Epic Self book cover">
-        <h1 class="bh">Unleash Your Epic Self: The Guide to Crushing it at School, Work and Life</h1>
-        <p class="bp">This book incorporates the most powerful personal change research and activities from the exciting science of Positive Psychology and makes them easy to understand and implement. The dynamic 36-week book-journal-workbook includes engaging activities in a full-color experience with edgy graphics. It’s an excellent read, a place to learn and reflect, and a brilliant resource for parents, teens, and education professionals to grow their well-being skills by living them daily. Gain a deeper understanding of what gives you a sense of satisfaction and joy. Imagine and create your best future. Harness your strengths, manage procrastination and strengthen people connections. Rig your everyday decisions for greatness. Every activity is student and educator tested! <br><br> Sherri Fisher MAPP, MEd has turned her work with at-risk students of all ages into a self-guided journey where the user can create new possibilities for change, action, and innovation. Unleash Your Epic Self teaches you to identify the root causes of success to intentionally construct a positive and more effective future in school, work and life.</p>
+        <div class="modal_inner">
+          <img src="img/unleash_cover.jpg" class="img2" alt="Unleash Your Epic Self book cover">
+          <div class="modal_inner_wrap">
+            <h1 class="">Unleash Your Epic Self: The Guide to Crushing it at School, Work and Life</h1>
+            <p class="">This book incorporates the most powerful personal change research and activities from the exciting science of Positive Psychology and makes them easy to understand and implement. The dynamic 36-week book-journal-workbook includes engaging activities in a full-color experience with edgy graphics. It’s an excellent read, a place to learn and reflect, and a brilliant resource for parents, teens, and education professionals to grow their well-being skills by living them daily. Gain a deeper understanding of what gives you a sense of satisfaction and joy. Imagine and create your best future. Harness your strengths, manage procrastination and strengthen people connections. Rig your everyday decisions for greatness. Every activity is student and educator tested! <br><br> Sherri Fisher MAPP, MEd has turned her work with at-risk students of all ages into a self-guided journey where the user can create new possibilities for change, action, and innovation. Unleash Your Epic Self teaches you to identify the root causes of success to intentionally construct a positive and more effective future in school, work and life.</p>
+            <button class="buy_button">Buy the book</button>
+          </div>
+        </div>
       </div>
       <div class="book_modal">
-        <img src="img/smart_cover.png" class="img2" alt="SMART Strengths book cover">
-        <h1 class="bp">SMART Strengths: Building Character, Resilience and Relationships in Youth.</h1>
-        <p class="bh2">Sherri is co-author of this popular positive education book. Transform your home and school with the SMART Strengths approach. Grade-leveled appendix of activities.</p>
+        <div class="modal_inner">
+          <img src="img/smart_cover.png" class="img2" alt="SMART Strengths book cover">
+          <div class="modal_inner_wrap">
+            <h1 class="">SMART Strengths: Building Character, Resilience and Relationships in Youth.</h1>
+            <p class="">Sherri is co-author of this popular positive education book. Transform your home and school with the SMART Strengths approach. Grade-leveled appendix of activities.</p>
+            <a href="http://www.amazon.com/gp/product/0983430608/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0983430608&linkCode=as2&tag=shewfis-20"><button class="buy_button">Buy the book</button></a>
+          </div>
+        </div>
       </div>
-      <button class="bleft" onclick="change(-1);">&#10094;</button>
-      <button class="bright" onclick="change(1);">&#10095;</button>
+      <div class="book_modal">
+          <h1>Sherri's work is also featured in these books:</h1>
+          <div class="modal_inner">
+            <div class="modal_inner_wrap modal_book2">
+              <img src="img/character.jpg" class="img3" alt="Character Strengths Matter book cover">
+              <h1 class="">Character Strengths Matter: How to Live a Full Life</h1>
+              <p class="">Appreciate, explore and expand your use of character strengths! An all-star cast of 30+ Positive Psychology writers and editors, plus original illustrations.</p>
+              <a href="http://www.amazon.com/gp/product/0692465642/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0692465642&linkCode=as2&tag=positivecom0b-20&linkId=BUPUOAI7P2KP7QBW"><button class="buy_button">Buy the book</button></a>
+            </div>
+            <div class="modal_inner_wrap modal_book2">
+              <img src="img/resilience.jpg" class="img3" alt="Resilience book cover">
+              <h1 class="">Resilience: How to Navigate Life's Curves</h1>
+              <p class="">Some people are challenged by life events and and become stronger, more grateful and more successful in their lives. What can we learn from them that can make your life better? This collection answers these questions and more.</p>
+              <a href="http://www.amazon.com/Resilience-Navigate-Curves-Positive-Psychology/dp/1449919375/ref=pd_bxgy_b_img_y"><button class="buy_button">Buy the book</button></a>
+            </div>
+            <div class="modal_inner_wrap modal_book2">
+            <img src="img/gratitude.jpg" class="img3" alt="Gratitiude book cover">
+            <h1 class="">Gratitude: How to Appreciate Life's Gifts</h1>
+            <p class="">Explore the benefits and practices of gratitude! Sixteen authors from three continents bring practical suggestions based on the latest research.</p>
+            <a href="http://www.amazon.com/Gratitude-How-Appreciate-Lifes-Gifts/dp/145387867X/ref=pd_bxgy_b_img_y"><button class="buy_button">Buy the book</button></a>
+          </div>
+        </div>
+      </div>
+      <button class="bleft buy_button" onclick="change(-1);">&#10094; more</button>
+      <button class="bright buy_button" onclick="change(1);">more &#10095;</button>
 
     </div>
 
