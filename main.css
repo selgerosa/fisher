@@ -17,7 +17,7 @@
 }
 
 /* general style */
-h1 {
+h1,h2 {
   font-family: 'Vidaloka', serif;
   font-size: 4vh;
 }
@@ -159,7 +159,7 @@ body {
   margin-left: 2vw;
   align-items: center;
 }
-.modal_inner_wrap h1 {
+.modal_inner_wrap h2 {
   font-size: 3vh;
 }
 .modal_book2{
@@ -447,7 +447,7 @@ body {
     width: 90vw;
   }
 
-  h1 {
+  h1,h2 {
     font-size: 3vh;
   }
   .bh,.bh2,.bp {
@@ -691,7 +691,7 @@ body {
   .modal_inner {
     flex-direction: column;
   }
-  .modal_inner h1 {
+  .modal_inner h2 {
     font-size: 2vh;
   }
   .modal_book2 {
