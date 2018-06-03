@@ -13,44 +13,7 @@
   <!-- full page snap js from https://github.com/alvarotrigo/fullPage.js/#fullpagejs -->
   <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
   <script src="jquery.fullPage.js"></script>
-  <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['home', 'about', 'work', 'books', 'contact'],
-				menu: '#nav',
-				scrollingSpeed: 1000,
-        onLeave:function(index, nextIndex, direction) {
-      		var leavingSection = $(this);
 
-      		//after leaving section 2
-      		if(index == 1 && direction == 'down'){
-            navstyle('n2');
-      		}
-          else if(index == 2 && direction == 'up'){
-      		 	navstyle('n1');
-      		}
-          else if(index == 2 && direction == 'down'){
-      		 	navstyle('n3');
-      		}
-          else if(index == 3 && direction == 'up'){
-      		 	navstyle('n2');
-      		}
-          else if(index == 3 && direction == 'down'){
-      		 	navstyle('n4');
-      		}
-          else if(index == 4 && direction == 'up'){
-      		 	navstyle('n3');
-      		}
-          else if(index == 4 && direction == 'down'){
-      		 	navstyle('n5');
-      		}
-          else if(index == 5 && direction == 'up'){
-      		 	navstyle('n4');
-      		}
-      	}
-			});
-		});
-	</script>
   <!-- metadata -->
   <meta charset="UTF-8">
   <!-- TODO: <meta name="keywords" content="">-->
@@ -63,6 +26,8 @@
   <meta property="og:url" content="http://www.sherrifisher.com/" />
   <meta name="msapplication-TileColor" content="#fff"/>
 <meta name="msapplication-TileImage" content="favicon.png"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div class="parent">
@@ -305,6 +270,43 @@ function showModal(n) {
     x[modalIndex-1].style.display = "flex";
 }
 </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      anchors: ['home', 'about', 'work', 'books', 'contact'],
+      menu: '#nav',
+      scrollingSpeed: 1000,
+      onLeave:function(index, nextIndex, direction) {
+        var leavingSection = $(this);
 
+        //after leaving section 2
+        if(index == 1 && direction == 'down'){
+          navstyle('n2');
+        }
+        else if(index == 2 && direction == 'up'){
+          navstyle('n1');
+        }
+        else if(index == 2 && direction == 'down'){
+          navstyle('n3');
+        }
+        else if(index == 3 && direction == 'up'){
+          navstyle('n2');
+        }
+        else if(index == 3 && direction == 'down'){
+          navstyle('n4');
+        }
+        else if(index == 4 && direction == 'up'){
+          navstyle('n3');
+        }
+        else if(index == 4 && direction == 'down'){
+          navstyle('n5');
+        }
+        else if(index == 5 && direction == 'up'){
+          navstyle('n4');
+        }
+      }
+    });
+  });
+</script>
 </body>
 </html>
