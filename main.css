@@ -150,6 +150,12 @@ body {
   top:50vh;
 }
 
+/* contact text */
+.cinner {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* image style */
 .about .img2 {
   width: 50vh;
