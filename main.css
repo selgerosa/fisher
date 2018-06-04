@@ -6,7 +6,6 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  background-color: white;
 }
 .child {
   align-items: center;
@@ -16,10 +15,18 @@
   width: 98vw;
 }
 
+.bg {
+  z-index: -1;
+  position: absolute;
+  display: inline;
+  height: 500vh;
+}
 /* general style */
 h1,h2 {
   font-family: 'Vidaloka', serif;
   font-size: 4vh;
+  margin: 0;
+  margin-bottom: 1vh;
 }
 p {
   margin: 0;
@@ -107,11 +114,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   .ainner,.winner {
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+
   }
 
 /* work text */
@@ -157,9 +166,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-left: 2vw;
-  align-items: center;
+  align-items: center;margin-left: 2vw;
 }
 .modal_inner_wrap h2 {
   font-size: 3vh;
@@ -188,17 +195,21 @@ body {
 .buy_button {
   width: auto;
   padding: 2vh;
-  margin-top:2vh;
+  margin:2vh 0;
   font-family: 'Vidaloka', serif;
   background-color: white;
-  background: none;
   border-radius: 1vh;
   border-color:  #5f6063;
+  background-color: white;
   -webkit-transition-duration: 0.4s;
    transition-duration: 0.4s;
 }
 .buy_button:hover {
   background-color: #c1015b;
+}
+
+.buy_button:active {
+
 }
 
 .bright {
@@ -696,8 +707,7 @@ body {
   }
 
   #i022 /*books*/ {
-    top:390vh;
-    left:70vw;
+    display: none;
   }
 
   #i023 /*home*/ {
@@ -716,7 +726,7 @@ body {
     font-size: 2vh;
   }
   .modal_book2 {
-    width: 90vw;
+    width: 80vw;
   }
   .buy_button {
     padding:1vh;
@@ -727,12 +737,18 @@ body {
 
 
 @media all and (min-width:1200px) {
-  .ainner,.winner, {
+  .ainner,.winner,.binner {
     width:30vw;
+  }
+  .books .img2 {
+    width: auto;
   }
 }
 @media all and (min-width:2000px) {
-  .binner {
+  .aouter {
+    width: 50vw;
+  }
+  .binner,.wouter {
     width:30vw;
   }
   .books .img2 {
