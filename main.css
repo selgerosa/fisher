@@ -206,28 +206,35 @@ body {
 }
 
 /* hover image styles and fucntion */
-.posview {
+.overlayVis {
   visibility: visible !important;
 }
 
+.glyphVisOff {
+  visibility: hidden !important;
+}
+
 .pos1 {
-  background: url("img/b1.jpg") no-repeat center;
+  background: url("img/b1.png") no-repeat center;
 }
 
 .pos2 {
-  background: url("img/b2.jpg") no-repeat center;
+  background: url("img/b2.png") no-repeat center;
 }
 
 .pos3{
-  background: url("img/b3.jpg") no-repeat center;
+  background: url("img/b3.png") no-repeat center;
 }
 
 .pos {
   visibility: hidden;
   position: fixed;
-  display: table;
-  width: 20vw;
-  height:20vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 25vh;
   background-size: 100% auto;
   z-index: 2;
   font-size: 2vh;
@@ -244,9 +251,12 @@ body {
 }
 
 .overlay {
-  display: table-cell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   vertical-align: middle;
-  width: 15vw;
+  width: 35vw;
   padding-left:3vw;
   padding-right:3vw;
 }
@@ -271,8 +281,8 @@ body {
 }
 
 #h00 {
-  left: 10vw;
-  top:10vh;
+  left: 7.5vw;
+  top:7.5vh;
 }
 
 #i01 /*about*/ {
@@ -281,8 +291,8 @@ body {
 }
 
 #h01 {
-    top:110vh;
-    left:70vw;
+    top:107.5vh;
+    left:67.5vw;
 }
 
 #i05 /*work*/ {
@@ -290,8 +300,8 @@ body {
   left:75vw;
 }
 #h05 {
-  top:200vh;
-  left:70vw;
+  top:197.5vh;
+  left:67.5vw;
 }
 
 #i06 /*contact*/ {
@@ -320,8 +330,8 @@ body {
 }
 
 #h08 /*work*/ {
-  top:273vh;
-  left:25vw;
+  top:270vh;
+  left:23.5vw;
 }
 
 #i09 /*about*/ {
@@ -350,7 +360,7 @@ body {
 
 #h014 /*books*/ {
   top:300vh;
-  left:80vw;
+  left:75vw;
 }
 
 #i016 /*work*/ {
@@ -473,13 +483,13 @@ body {
   }
 
   #h00 {
-    left: 10vw;
+    left: 7.5vw;
     top:5vh;
   }
 
   #h01 {
-      top:105vh;
-      left:70vw;
+      top:103.5vh;
+      left:67.5vw;
   }
 
   #i05 /*work*/ {
@@ -489,12 +499,12 @@ body {
 
   #h05 {
     top:205vh;
-    left:60vw;
+    left:57.5vw;
   }
 
   #h06 /*contact*/ {
-    top:467vh;
-    left:10vw;
+    top:462.5vh;
+    left:7.5vw;
   }
 
   #i07 /*contact*/ {
@@ -504,12 +514,12 @@ body {
 
   #h07 /*contact*/ {
     top:405vh;
-    left:75vw;
+    left:72.5vw;
   }
 
   #h08 /*work*/ {
     top:268vh;
-    left:25vw;
+    left:22.5vw;
   }
 
   #i014 {
@@ -518,8 +528,8 @@ body {
   }
 
   #h014 /*books*/ {
-    top:305vh;
-    left:0vw;
+    top:303.5vh;
+    left:-1vw;
   }
 
   #i015 {
@@ -528,13 +538,15 @@ body {
   #i022 {
     top:390vh;
   }
+  .pos {
+
+  }
 }
 
 @media all and (max-width:500px) {/*maybe more*/
   .home h1 {
     font-size: 12vw;
   }
-
 
   .img {
     width: 25vw;
@@ -568,22 +580,20 @@ body {
     display: none;
   }
 
-  .pos {
-    width: 35vw;
+
+  #h00 {
+    left: 0vw;
+    top:10vh;
   }
+
   #i00 /*home*/{
     left: 15vw;
     top:10vh;
   }
 
-  #h00 {
-    left: 10vw;
-    top:7vh;
-  }
-
   #i01 /*about*/ {
-    top:105vh;
-    left:70vw;
+    top:100vh;
+    left:60vw;
   }
 
   #h01 {
@@ -596,8 +606,8 @@ body {
     left:65vw;
   }
   #h05 {
-    top:202vh;
-    left:60vw;
+    top:205vh;
+    left:50vw;
   }
 
   #i06 /*contact*/ {
@@ -606,8 +616,8 @@ body {
   }
 
   #h06 /*contact*/ {
-    top:477vh;
-    left:0vw;
+    top:480vh;
+    left:-2.5vw;
   }
 
   #i07 /*contact*/ {
@@ -616,8 +626,8 @@ body {
   }
 
   #h07 /*contact*/ {
-    top:413vh;
-    left:55vw;
+    top:415vh;
+    left:47.5vw;
   }
 
   #i08 /*work*/ {
@@ -626,8 +636,8 @@ body {
   }
 
   #h08 /*work*/ {
-    top:273vh;
-    left:5vw;
+    top:275vh;
+    left:0vw;
   }
 
   #i09 /*about*/ {
@@ -650,13 +660,13 @@ body {
   }
 
   #i014 /*books*/ {
-    top:390vh;
+    top:385vh;
     left:35vw;
   }
 
   #h014 /*books*/ {
-    top:387vh;
-    left:0vw;
+    top:385vh;
+    left:20vw;
   }
 
   #i016 /*work*/ {
@@ -687,6 +697,10 @@ body {
     top:90vh;
     left:30vw;
   }
+  .pos {
+    width:50vw;
+    height:25vw;
+  }
 
   .modal_inner {
     flex-direction: column;
@@ -706,7 +720,15 @@ body {
 
 
 @media all and (min-width:1200px) {
-  .a1,.a2 {
+  .ainner,.winner, {
     width:30vw;
+  }
+}
+@media all and (min-width:2000px) {
+  .binner {
+    width:30vw;
+  }
+  .books .img2 {
+    width:auto;
   }
 }
