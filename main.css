@@ -154,8 +154,12 @@ body {
 .cinner {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  width: 20vw;
 }
-
+.cinner .img3 {
+  width: 10vw;
+}
 /* image style */
 .about .img2 {
   width: 50vh;
@@ -562,8 +566,8 @@ body {
   #i022 {
     top:390vh;
   }
-  .pos {
-
+  .cinner .img3 {
+    width: 15vw;
   }
 }
 
@@ -738,7 +742,9 @@ body {
     padding:1vh;
   }
 
-
+  .cinner .img3 {
+    width: 30vw;
+  }
 }
 
 
