@@ -230,7 +230,7 @@ body {
 .img {
   position: fixed;
   z-index: 1;
-  width:10vw;
+  width:5vw;
 }
 
 /* hover image styles and fucntion */
