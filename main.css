@@ -104,7 +104,7 @@ a {
 .home h2 {
   text-align: center;
   margin-top: 1vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;font-weight:300;
 }
 
 /*about text formatting*/
@@ -189,8 +189,6 @@ a {
 
 .buy_button {
   width: auto;
-  padding: 2vh;
-  margin:2vh 0;
   font-family: 'Vidaloka', serif;
   background-color: white;
   border-radius: 1vh;
@@ -201,6 +199,10 @@ a {
 }
 .buy_button:hover {
   background-color: #c1015b;
+}
+.buy_button a,.bleft,.bright {
+  display: block;
+  padding: 2vh;
 }
 
 .bright,.bleft {
@@ -628,7 +630,7 @@ a {
   }
 
   .modal_inner_wrap,.ainner {
-    width: 90vw;
+    width: 90vw !important;
   }
 
   .buy_button {
