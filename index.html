@@ -14,7 +14,7 @@
   <!-- <meta name="twitter:card" value="summary"> -->
   <meta property="og:title" content="Sherri Fisher">
   <meta property="og:description" content="I see in you what will unleash your potential. Things that we believe about ourselves and the world are very powerful. Your current challenges are not a marker of your future ability to succeed. With me as your learning advocate and your ally, together we will unleash your most epic self.">
-  <meta property="og:image" content="todo">
+  <meta property="og:image" content="img/sherri.png">
   <meta property="og:url" content="http://www.sherrifisher.com/" />
   <meta name="msapplication-TileColor" content="#fff"/>
   <meta name="msapplication-TileImage" content="favicon.png"/>
@@ -25,6 +25,10 @@
   <link rel="stylesheet" type="text/css" href="main.css" title="style">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300|Vidaloka" rel="stylesheet">
 
+  <!-- js imports -->
+  <script src="jquery-3.3.1.min.js"></script>
+  <!-- full page snap js from https://github.com/alvarotrigo/fullPage.js/#fullpagejs -->
+  <script src="jquery.fullPage.js"></script>
 </head>
 
 <body>
@@ -195,10 +199,44 @@
     </div>
   </div>
 </div>
-<!-- js imports -->
-<script src="jquery-3.3.1.min.js"></script>
-<!-- full page snap js from https://github.com/alvarotrigo/fullPage.js/#fullpagejs -->
-<script src="jquery.fullPage.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      anchors: ['home', 'about', 'work', 'books', 'contact'],
+      menu: '#nav',
+      scrollingSpeed: 1000,
+      onLeave:function(index, nextIndex, direction) {
+        var leavingSection = $(this);
+
+        //after leaving section 2
+        if(index == 1 && direction == 'down'){
+          navstyle('n2');
+        }
+        else if(index == 2 && direction == 'up'){
+          navstyle('n1');
+        }
+        else if(index == 2 && direction == 'down'){
+          navstyle('n3');
+        }
+        else if(index == 3 && direction == 'up'){
+          navstyle('n2');
+        }
+        else if(index == 3 && direction == 'down'){
+          navstyle('n4');
+        }
+        else if(index == 4 && direction == 'up'){
+          navstyle('n3');
+        }
+        else if(index == 4 && direction == 'down'){
+          navstyle('n5');
+        }
+        else if(index == 5 && direction == 'up'){
+          navstyle('n4');
+        }
+      }
+    });
+  });
+</script>
 <script>
 function show(overlayId, glyphId) {
   var overlay = document.getElementById(overlayId);
@@ -295,43 +333,6 @@ function showModal(n) {
     x[modalIndex-1].style.display = "flex";
 }
 </script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-      anchors: ['home', 'about', 'work', 'books', 'contact'],
-      menu: '#nav',
-      scrollingSpeed: 1000,
-      onLeave:function(index, nextIndex, direction) {
-        var leavingSection = $(this);
 
-        //after leaving section 2
-        if(index == 1 && direction == 'down'){
-          navstyle('n2');
-        }
-        else if(index == 2 && direction == 'up'){
-          navstyle('n1');
-        }
-        else if(index == 2 && direction == 'down'){
-          navstyle('n3');
-        }
-        else if(index == 3 && direction == 'up'){
-          navstyle('n2');
-        }
-        else if(index == 3 && direction == 'down'){
-          navstyle('n4');
-        }
-        else if(index == 4 && direction == 'up'){
-          navstyle('n3');
-        }
-        else if(index == 4 && direction == 'down'){
-          navstyle('n5');
-        }
-        else if(index == 5 && direction == 'up'){
-          navstyle('n4');
-        }
-      }
-    });
-  });
-</script>
 </body>
 </html>
