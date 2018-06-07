@@ -50,7 +50,7 @@
           <p>Develop new strengths.</p>
         </div>
       </div>
-      <img src="img/00.png" class="img" id="i00" onmouseover="show('h00','i00');" alt="green smiling face with closed eyes, displays text on hover">
+      <img src="img/00.png" class="img" id="i00" onmouseover="show('h00','i00');" onclick="show('h00','i00');" alt="green smiling face with closed eyes, displays text on hover">
 
       <img src="img/010.png" class="img" id="i010" alt="orange squigly line">
       <img src="img/023.png" class="img" id="i023" alt="purple brush stroke">
@@ -65,7 +65,7 @@
           <p>Reframe what isn’t.</p>
         </div>
       </div>
-      <img src="img/01.png" class="img" id="i01" onmouseover="show('h01','i01');" alt="green smiling face, displays text on hover">
+      <img src="img/01.png" class="img" id="i01" onmouseover="show('h01','i01');" onclick="show('h00','i00');" alt="green smiling face, displays text on hover">
 
       <img src="img/09.png" class="img" id="i09" alt="blue squigly line">
       <img src="img/015.png" class="img" id="i015" alt="green profile of a head with a star in the center">
@@ -92,10 +92,10 @@
         </div>
       </div>
       <img src="img/021.png" class="img" id="i021" alt="yellow zig zag line">
-      <img src="img/05.png" class="img" onmouseover="show('h05','i05');" id="i05" alt="orange sun smiling with closed eyes, displays text on hover">
+      <img src="img/05.png" class="img" onmouseover="show('h05','i05');" onclick="show('h00','i00');" id="i05" alt="orange sun smiling with closed eyes, displays text on hover">
       <img src="img/013.png" class="img" id="i013" alt="purple squigly line">
       <img src="img/016.png" class="img" id="i016" alt="green rounded star">
-      <img src="img/08.png" class="img" onmouseover="show('h08','i08');" id="i08" alt="yellow smiling face with closed eyes, displays text on hover">
+      <img src="img/08.png" class="img" onmouseover="show('h08','i08');" onclick="show('h00','i00');" id="i08" alt="yellow smiling face with closed eyes, displays text on hover">
       <div class="wouter">
         <div class="winner">
           <h2>Learning Specialist, Executive Coach, Writer, Speaker</h2>
@@ -112,7 +112,7 @@
         </div>
       </div>
       <img src="img/022.png" class="img" id="i022" alt="yellow paint stroke">
-      <img src="img/014.png" class="img" onmouseover="show('h014','i014');" id="i014" alt="blue smiley face">
+      <img src="img/014.png" class="img" onmouseover="show('h014','i014');" onclick="show('h00','i00');" id="i014" alt="blue smiley face">
       <img src="img/019.png" class="img" id="i019" alt="purple zig zag line">
       <div class="book_modal">
         <div class="modal_inner">
@@ -175,8 +175,8 @@
           <p>Invest in shared experiences.</p>
         </div>
       </div>
-      <img src="img/06.png" class="img" onmouseover="show('h06','i06')" id="i06" alt="green smiling face, displays text on hover">
-      <img src="img/07.png" class="img" onmouseover="show('h07','i07')" id="i07" alt="purple smiling face, displays text on hover">
+      <img src="img/06.png" class="img" onmouseover="show('h06','i06')" onclick="show('h00','i00');" id="i06" alt="green smiling face, displays text on hover">
+      <img src="img/07.png" class="img" onmouseover="show('h07','i07')" onclick="show('h00','i00');" id="i07" alt="purple smiling face, displays text on hover">
 
       <img src="img/020.png" class="img" id="i020" alt="green zig zag line">
       <h2>Let's get in touch!</h2>
@@ -205,35 +205,37 @@
       anchors: ['home', 'about', 'work', 'books', 'contact'],
       menu: '#nav',
       scrollingSpeed: 1000,
-      onSlideLeave:function( anchorLink, index, slideIndex, direction, nextSlideIndex) {
-        var leavingSection = $(this);
-        navstyle(nextSlideIndex);
-        // //after leaving section 2
-        // if(index == 1 && direction == 'down'){
-        //   navstyle('n2');
-        // }
-        // else if(index == 2 && direction == 'up'){
-        //   navstyle('n1');
-        // }
-        // else if(index == 2 && direction == 'down'){
-        //   navstyle('n3');
-        // }
-        // else if(index == 3 && direction == 'up'){
-        //   navstyle('n2');
-        // }
-        // else if(index == 3 && direction == 'down'){
-        //   navstyle('n4');
-        // }
-        // else if(index == 4 && direction == 'up'){
-        //   navstyle('n3');
-        // }
-        // else if(index == 4 && direction == 'down'){
-        //   navstyle('n5');
-        // }
-        // else if(index == 5 && direction == 'up'){
-        //   navstyle('n4');
-        // }
+      onLeave:function(index, nextIndex, direction){
+        var temp='n'+(nextIndex);
+        navstyle(temp);
       }
+      // onLeave:function(index, nextIndex, direction){
+      //   //after leaving section 2
+      //   if(index == 1 && direction == 'down'){
+      //     navstyle('n2');
+      //   }
+      //   else if(index == 2 && direction == 'up'){
+      //     navstyle('n1');
+      //   }
+      //   else if(index == 2 && direction == 'down'){
+      //     navstyle('n3');
+      //   }
+      //   else if(index == 3 && direction == 'up'){
+      //     navstyle('n2');
+      //   }
+      //   else if(index == 3 && direction == 'down'){
+      //     navstyle('n4');
+      //   }
+      //   else if(index == 4 && direction == 'up'){
+      //     navstyle('n3');
+      //   }
+      //   else if(index == 4 && direction == 'down'){
+      //     navstyle('n5');
+      //   }
+      //   else if(index == 5 && direction == 'up'){
+      //     navstyle('n4');
+      //   }
+      // }
     });
   });
 </script>
