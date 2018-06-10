@@ -285,133 +285,95 @@ a {
   padding-right:3vw;
 }
 
-/* #i00, #i01, #i05, #i06, #i07, #i08, #i014  /*animation for glyphs that reveal Pos Edge tips*/
-/* { */
-  /* transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-#i00, #i05, #i07, #i014 {
-  animation: shake 5s infinite both;
-}
-#i01, #i06, #i08 {
-  animation: shake2 5s infinite both;
-} */
-
-#i00 /*home*/{
+/* home */
+#i08 {
   left: 6vw;
   top:16vh;
 }
-#h00 {
-  left: 7.5vw;
-  top:7.5vh;
-}
 
-#i01 /*about*/ {
-  top:10vh;
-  left:65vw;
-}
-#h01 {
-    top:102vh;
-    left:65vw;
-}
-
-#i05 /*work*/ {
-  top:6vh;
-  left:68vw;
-}
-#h05 {
-  top:197.5vh;
-  left:67.5vw;
-}
-
-#i06 /*contact*/ {
-  top:78vh;
-  left:10vw;
-}
-#h06 /*contact*/ {
-  top:470vh;
-  left:10vw;
-}
-
-#i07 /*contact*/ {
-  top:08vh;
-  left:70vw;
-}
-#h07 /*contact*/ {
-  top:400vh;
-  left:70vw;
-}
-
-#i08 /*work*/ {
-  top:85vh;
-  left:20vw;
-}
-#h08 /*work*/ {
-  top:280vh;
-  left:23.5vw;
-}
-
-#i09 /*about*/ {
-  top:88vh;
-  left:10vw;
-}
-
-#i010 /*home*/{
+#i02 {
   left:70vw;
   top:63vh;
 }
 
-#i013 /*work*/ {
-  top:83vh;
-  left:10vw;
-}
-
-#i015 /*about*/ {
-  top:80vh;
-}
-
-#i014 /*books*/ {
-  top:3vh;
-  left:76vw;
-}
-#h014 /*books*/ {
-  top:296vh;
-  left:75vw;
-}
-
-#i016 /*work*/ {
-  left:75vw;
-  top:78vh;
-}
-
-#i019 /*books*/ {
-  top:90vh;
-  left: 15vw;
-}
-
-#i020 /*contact*/ {
-  top:15vh;
-  left:75vw;
-}
-
-#i021 /*work*/ {
-  left:60vw;
-  top:20vh;
-}
-
-#i022 /*books*/ {
-  top:80vh;
-  left:75vw;
-}
-
-#i023 /*home*/ {
+#i023 {
   top:90vh;
   left:25vw;
 }
 
+/* about */
+#i07 {
+  top:10vh;
+  left:65vw;
+}
 
+#i09 {
+  top:88vh;
+  left:10vw;
+}
 
+#i03 {
+  top:80vh;
+}
+
+/* work */
+#i021 {
+  left:60vw;
+  top:20vh;
+}
+
+#i04 {
+  top:6vh;
+  left:68vw;
+}
+
+#i013 {
+  top:83vh;
+  left:10vw;
+}
+
+#i015 {
+  left:75vw;
+  top:78vh;
+}
+
+#i00 {
+  top:85vh;
+  left:20vw;
+}
+
+/* books */
+
+#i022 {
+  top:80vh;
+  left:75vw;
+}
+
+#i014 {
+  top:3vh;
+  left:76vw;
+}
+
+#i019 {
+  top:80vh;
+  left: 5vw;
+}
+
+/* contact */
+
+#i06 {
+  top:78vh;
+  left:10vw;
+}
+
+#i016 {
+  top:08vh;
+  left:70vw;
+}
+#i010 {
+  top:15vh;
+  left:75vw;
+}
 
 @keyframes fadein {
     0% {
@@ -424,49 +386,6 @@ a {
       opacity: 1;
     }
 }
-
-@keyframes shake {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  5% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  10% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  15% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  20%,100 {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
-@keyframes shake2 {
-  40% {
-    transform: translate3d(0, 0, 0);
-  }
-  45% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  55% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  0%,60%,100 {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
 
 @media all and (max-width:768px) {
 
@@ -526,7 +445,29 @@ a {
   .modal_inner_wrap {
     width: 60vw;
   }
+  /* work */
 
+  #i013 {
+    left:-5vw;
+    top:75vh;
+  }
+
+  #i00 {
+    left:-5vw;
+  }
+
+  #i014 {
+    left:70vw;
+  }
+
+  #i019 {
+    top:90vh;
+    left:20vw;
+  }
+  /* books */
+  #i022 {
+    left:80vw;
+  }
 }
 
 @media all and (max-width:500px) {
@@ -603,6 +544,9 @@ a {
     font-size: 3vw;
   }
 
+  #i00 {
+    left:10vw;
+  }
   #i021 {
     top: 15vh;
   }
