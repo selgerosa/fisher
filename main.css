@@ -26,7 +26,7 @@ h3 {
   margin: 4vh 0vw;
   font-size: 1.8vw;
 }
-p {
+.child p {
   margin: 2vh 0vw;
   font-size: 1.5vw;
 }
@@ -412,12 +412,13 @@ a {
 
   .home, .about, .work, .books, .contact {
     margin-left:0vw;
+    width: 90vw;
   }
 
   h1,h2 {
     font-size: 6vw;
   }
-  p {
+  .child p {
     font-size: 2vw;
   }
   .img {
@@ -439,7 +440,9 @@ a {
     width:90vw;
     height:auto;
   }
-
+  .nav a:hover {
+    font-size: 5vw !important;
+  }
   .overlay p{
     font-size: 1.5vw;
   }
@@ -492,7 +495,15 @@ a {
 }
 
 @media all and (max-width:500px) {
-
+  #n1 {
+    font-size: 6vw;
+  }
+  .nav a {
+    font-size: 4vw;
+  }
+  .nav a:hover {
+    font-size: 6vw !important;
+  }
   .img {
     width:10vw;
   }
@@ -502,14 +513,17 @@ a {
     width: 70vw;
   }
 
-  .aouter,.wouter,.ainner,.winner {
+  .aouter,.wouter,.ainner,.ainner2,.ainner3,.winner,.winner2 {
     flex-direction: column;
+    margin-left: 1vw;
+    width: 85vw;
   }
+
   .home h1 {
     font-size: 7vw;
   }
 
-  p {
+  .child p {
     font-size: 3vw;
   }
 
@@ -542,7 +556,7 @@ a {
     width: 80vw;
   }
 
-  .modal_inner_wrap,.ainner {
+  .modal_inner_wrap,.ainner,.ainner2,.ainner3,.winner,.winner2 {
     width: 90vw !important;
   }
 

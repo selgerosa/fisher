@@ -228,17 +228,31 @@ function hide(overlayId, glyphId) {
 }
 function navstyle(navid) {
   var navclr = document.getElementById(navid);
+  var screenWid = screen.width;
+  var fontHov;
+  var fontBase;
+  if (screenWid<500) {
+    fontHov="6vw";
+    fontBase="4vw";
+  }
+  else if (screenWid<500) {
+
+  }
+  else {
+    fontHov="3vw";
+    fontBase="2vw";
+  }
   if (navid=="n1") {
     navclr.style.color = "#64CCC9";
     document.getElementById('n2').style.color = "black";
     document.getElementById('n3').style.color = "black";
     document.getElementById('n4').style.color = "black";
     document.getElementById('n5').style.color = "black";
-    navclr.style.fontSize = "3vw";
-    document.getElementById('n2').style.fontSize = "2vw";
-    document.getElementById('n3').style.fontSize = "2vw";
-    document.getElementById('n4').style.fontSize = "2vw";
-    document.getElementById('n5').style.fontSize = "2vw";
+    navclr.style.fontSize = fontHov;
+    document.getElementById('n2').style.fontSize = fontBase;
+    document.getElementById('n3').style.fontSize = fontBase;
+    document.getElementById('n4').style.fontSize = fontBase;
+    document.getElementById('n5').style.fontSize = fontBase;
   }
   else if(navid=="n2"){
     navclr.style.color = "#319B42";
@@ -246,11 +260,11 @@ function navstyle(navid) {
     document.getElementById('n3').style.color = "black";
     document.getElementById('n4').style.color = "black";
     document.getElementById('n5').style.color = "black";
-    navclr.style.fontSize = "3vw";
-    document.getElementById('n1').style.fontSize = "2vw";
-    document.getElementById('n3').style.fontSize = "2vw";
-    document.getElementById('n4').style.fontSize = "2vw";
-    document.getElementById('n5').style.fontSize = "2vw";
+    navclr.style.fontSize = fontHov;
+    document.getElementById('n1').style.fontSize = fontBase;
+    document.getElementById('n3').style.fontSize = fontBase;
+    document.getElementById('n4').style.fontSize = fontBase;
+    document.getElementById('n5').style.fontSize = fontBase;
   }
   else if(navid=="n3"){
     navclr.style.color = "#FFC72C";
@@ -258,11 +272,11 @@ function navstyle(navid) {
     document.getElementById('n1').style.color = "black";
     document.getElementById('n4').style.color = "black";
     document.getElementById('n5').style.color = "black";
-    navclr.style.fontSize = "3vw";
-    document.getElementById('n2').style.fontSize = "2vw";
-    document.getElementById('n1').style.fontSize = "2vw";
-    document.getElementById('n4').style.fontSize = "2vw";
-    document.getElementById('n5').style.fontSize = "2vw";
+    navclr.style.fontSize = fontHov;
+    document.getElementById('n2').style.fontSize = fontBase;
+    document.getElementById('n1').style.fontSize = fontBase;
+    document.getElementById('n4').style.fontSize = fontBase;
+    document.getElementById('n5').style.fontSize = fontBase;
   }
   else if(navid=="n4"){
     navclr.style.color = "#F93822";
@@ -270,11 +284,11 @@ function navstyle(navid) {
     document.getElementById('n3').style.color = "black";
     document.getElementById('n1').style.color = "black";
     document.getElementById('n5').style.color = "black";
-    navclr.style.fontSize = "3vw";
-    document.getElementById('n2').style.fontSize = "2vw";
-    document.getElementById('n3').style.fontSize = "2vw";
-    document.getElementById('n1').style.fontSize = "2vw";
-    document.getElementById('n5').style.fontSize = "2vw";
+    navclr.style.fontSize = fontHov;
+    document.getElementById('n2').style.fontSize = fontBase;
+    document.getElementById('n3').style.fontSize = fontBase;
+    document.getElementById('n1').style.fontSize = fontBase;
+    document.getElementById('n5').style.fontSize = fontBase;
   }
   else {
     navclr.style.color = "#5C068C";
@@ -282,11 +296,11 @@ function navstyle(navid) {
     document.getElementById('n3').style.color = "black";
     document.getElementById('n4').style.color = "black";
     document.getElementById('n1').style.color = "black";
-    navclr.style.fontSize = "3vw";
-    document.getElementById('n2').style.fontSize = "2vw";
-    document.getElementById('n3').style.fontSize = "2vw";
-    document.getElementById('n4').style.fontSize = "2vw";
-    document.getElementById('n1').style.fontSize = "2vw";
+    navclr.style.fontSize = fontHov;
+    document.getElementById('n2').style.fontSize = fontBase;
+    document.getElementById('n3').style.fontSize = fontBase;
+    document.getElementById('n4').style.fontSize = fontBase;
+    document.getElementById('n1').style.fontSize = fontBase;
   }
 }
 
