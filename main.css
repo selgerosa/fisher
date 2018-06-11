@@ -26,7 +26,7 @@ h3 {
   margin: 4vh 0vw;
   font-size: 1.8vw;
 }
-.child p {
+p {
   margin:0;
   margin-bottom: 2vh;
   font-size: 1.5vw;
@@ -65,12 +65,11 @@ a {
         transition: font-size 1s;
 }
 .nav a:hover {
-  font-size: 3vw;
+  font-size: 3vw !important;
 }
 
 #n1 {
   color:#F93822;
-  /* font-size: 3vw; */
 }
 #n1:hover {
   color:#F93822 !important;
@@ -104,12 +103,13 @@ a {
   margin-bottom: 2vh;
   flex-direction: row;
   width: 80vw;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .col {
   margin-left:2vw;
-  width: 30vw;
+  width: 50vw;
   align-items: center;
 }
 /* home style */
@@ -129,6 +129,9 @@ a {
 .home .img2 {
   width: 20vw;
 }
+.home .row{
+  justify-content: space-around;
+}
 /* about style */
 .about .img2 {
   width: 35vw;
@@ -139,12 +142,24 @@ a {
   color:#10069F;
 }
 .work .img2 {
-  width: inherit;
+  height:50vw;
 }
 /* contact style */
 .contact .img2 {
   width: 7vw;
   align-items: center;
+}
+.qastyle {
+  justify-content:space-around;
+}
+.qastyle .col{
+  width: 25vw;
+}
+.qastyle h3 {
+  font-size: 1.2vw;
+}
+.qastyle p{
+  font-size: 1vw;
 }
 
 /* books style */
@@ -301,7 +316,7 @@ a {
     width: 90vw;
   }
 
-  .child p {
+  p {
     font-size: 2vw;
   }
   .img {
@@ -310,9 +325,6 @@ a {
   .row {
     width: 90vw;
     margin-left: 0;
-  }
-  .col {
-    width: 40vw;
   }
   .about .img2 {
     width: 40vw;
@@ -327,7 +339,7 @@ a {
     font-size: 3vw;
   }
   .nav a:hover {
-    font-size: 5vw !important;
+    font-size: 4vw !important;
   }
   .overlay p{
     font-size: 1.5vw;
@@ -373,16 +385,21 @@ a {
   h3 {
     font-size: 6vw;
   }
-  .child p {
+  p {
     font-size: 4vw;
   }
-  .row,.col {
-    width: 90vw;
+  .row,.col{
+    width: 90vw !important;
   }
-  .row {
+  .row,.qastyle {
     flex-direction: column;
   }
-
+  .qastyle h3 {
+    font-size: 4vw;
+  }
+  .qastyle p{
+    font-size: 3vw;
+  }
   .nav a {
     font-size: 4vw;
   }
@@ -424,9 +441,7 @@ a {
 
 
 @media all and (min-width:1200px) {
-  .ainner,.winner, {
-    width:60vw;
-  }
+
   /* .nav a {
     font-size: 5vw;
   } */
