@@ -197,7 +197,9 @@ a {
 .bright {
   right:0;
 }
-
+.contact .row {
+  justify-content: space-around;
+}
 /* glyphs */
 .img {
   position: absolute;
@@ -336,7 +338,7 @@ a {
     height:auto;
   }
   .nav a {
-    font-size: 3vw;
+    font-size: 3vw !important;
   }
   .nav a:hover {
     font-size: 4vw !important;
@@ -401,7 +403,7 @@ a {
     font-size: 3vw;
   }
   .nav a {
-    font-size: 4vw;
+    font-size: 5vw !important;
   }
   .nav a:hover {
     font-size: 6vw !important;
@@ -413,6 +415,9 @@ a {
   .about .img2 {
     left:0;
     width: 70vw;
+  }
+  .contact .img2 {
+    width: 30vw;
   }
 /* turn off img on mobile */
   .books .img2,.work .img2 {
