@@ -23,13 +23,12 @@ h1,h2 {
 }
 h3 {
   font-family: 'Vidaloka', serif;
-  margin: 1vh;
+  margin: 4vh 0vw;
   font-size: 1.8vw;
 }
 p {
-  margin: 0;
+  margin: 2vh 0vw;
   font-size: 1.5vw;
-  margin-bottom: 1vh;
 }
 img {
   align-self:center;
@@ -130,17 +129,16 @@ a {
     justify-content: center;
     flex-direction: column;
   }
-  .ainner,.winner {
+  .ainner {
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
   }
-  .ainner {
-    width: 50vw;
+  .ainner,.ainner3,.winner {
+    width: 45vw;
   }
-  .ainner3 {
-    margin-left:2vw;
-    width: 60vw;
+  .ainner3,.winner {
+    margin-left:4vw;
   }
   .ainner2 {
     margin-left:2vw;
@@ -152,10 +150,12 @@ a {
 /* work text */
   .wouter {
     display: flex;
-
+    flex-direction: column;
   }
-  .winner {
-    width:56vw;
+
+  .winner2 {
+    justify-content: flex-end;
+    margin-left: 35vw;
   }
 
 /* contact text */
