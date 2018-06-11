@@ -29,6 +29,7 @@ h3 {
 p {
   margin: 0;
   font-size: 1.5vw;
+  margin-bottom: 1vh;
 }
 img {
   align-self:center;
@@ -114,11 +115,10 @@ a {
 
 /*about text formatting*/
 
-  .aouter {
+  .aouter,.ainner2 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width:80vw;
+    flex-direction: column;
   }
   .ainner,.winner {
     display: flex;
@@ -127,6 +127,17 @@ a {
   }
   .ainner {
     width: 50vw;
+  }
+  .ainner3 {
+    margin-left:2vw;
+    width: 60vw;
+  }
+  .ainner2 {
+    margin-left:2vw;
+    flex-direction: row;
+    width: inherit;
+    align-items: center;
+
   }
 /* work text */
   .wouter {
