@@ -27,7 +27,8 @@ h3 {
   font-size: 1.8vw;
 }
 .child p {
-  margin: 2vh 0vw;
+  margin:0;
+  margin-bottom: 2vh;
   font-size: 1.5vw;
 }
 img {
@@ -124,39 +125,30 @@ a {
 }
 /*about text formatting*/
 
-  .aouter,.ainner2 {
+  .outer,.row,.col {
     display: flex;
-    justify-content: center;
     flex-direction: column;
   }
-  .ainner {
-    display: flex;
-    flex-direction: column;
+  .row {
     margin-left: 2vw;
-  }
-  .ainner,.ainner3,.winner {
-    width: 45vw;
-  }
-  .ainner3,.winner {
-    margin-left:4vw;
-  }
-  .ainner2 {
-    margin-left:2vw;
+    margin-bottom: 5vh;
     flex-direction: row;
-    width: inherit;
+    width: 80vw;
+    justify-content: space-evenly;
+  }
+
+  .col {
+    margin-left:2vw;
+    width: 30vw;
     align-items: center;
-
   }
+  /* image style */
+  .about .img2 {
+    max-width: 35vw;
+  }
+
 /* work text */
-  .wouter {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .winner2 {
-    justify-content: flex-end;
-    margin-left: 35vw;
-  }
 
 /* contact text */
 .cinner {
@@ -168,11 +160,7 @@ a {
 .cinner .img3 {
   width: 10vw;
 }
-/* image style */
-.about .img2 {
-  width: 30vw;
-  left: 15vw;
-}
+
 /* books text */
 .books .img2 {
   max-width: 30vw;
@@ -220,17 +208,16 @@ a {
   padding:2vh;
   font-family: 'Vidaloka', serif;
   background-color: white;
-  border: 1px solid #5f6063;
+  border: none;
   border-radius: 5px;
   background-color: white;
   -webkit-transition-duration: 0.4s;
    transition-duration: 0.4s;
    font-size: 1.5vw;
    margin-top:1vh;
+   color: #F93822;
 }
-.buy_button:hover {
-  background-color: #c1015b;
-}
+
 .buy_button a,.bleft,.bright {
   display: block;
 }
@@ -238,6 +225,7 @@ a {
 .bright,.bleft {
   position: absolute;
   bottom: 2vh;
+  margin: 0vh 2vw;
 }
 .bright {
   right:0;
@@ -425,10 +413,6 @@ a {
     width: 7vw;
   }
 
-  .bh,.bh2,.bp {
-    width: 55vw;
-  }
-
   .about .img2 {
     width: 40vw;
   }
@@ -439,6 +423,9 @@ a {
     flex-direction: row;
     width:90vw;
     height:auto;
+  }
+  .nav a {
+    font-size: 3vw;
   }
   .nav a:hover {
     font-size: 5vw !important;
@@ -598,12 +585,7 @@ a {
   }
 }
 @media all and (min-width:2000px) {
-  .aouter {
-    width: 75vw;
-  }
-.wouter {
-    width:60vw;
-  }
+
 
 
   .about .img2 {
