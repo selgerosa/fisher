@@ -136,7 +136,7 @@ a {
   width: 35vw;
 }
 .about .row {
-  margin-bottom: 5vh;
+  margin-bottom: 20vh;
 }
 
 /* work style */
@@ -372,6 +372,10 @@ a {
     font-size: 1.5vw;
   }
 
+  .bbuy {
+    left:32vw;
+    bottom:25vh;
+  }
   #i03 {
     top:55vh;
   }
@@ -472,6 +476,10 @@ a {
     padding:1vh;
     margin: 1vh;
     font-size: 3vw;
+  }
+  .bbuy {
+    left:32vw;
+    bottom:60vh;
   }
   #i021,#i013,#i00,#i09 {
     visibility: hidden;
