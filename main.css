@@ -109,6 +109,9 @@ a {
   align-items: center;
 }
 /* home style */
+.home {
+  margin-left: 0;
+}
 .home h1,.home h2,.home h3 {
   margin:0;
   text-align: center;
