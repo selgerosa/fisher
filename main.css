@@ -146,7 +146,8 @@ a {
   color:#10069F;
 }
 .work .img2 {
-  height:50vw;
+  width:80vw;
+  margin-right: 2vw;
 }
 /* contact style */
 .contact .img2 {
