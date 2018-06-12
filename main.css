@@ -128,6 +128,9 @@ a {
 .home .img2 {
   width: 10vw;
 }
+.home .col {
+  margin-left: 0;
+}
 .home .row{
   justify-content: space-around;
 }
@@ -421,6 +424,9 @@ a {
 }
 
 @media all and (max-width:500px) {
+  .home {
+    margin-top:20vh;
+  }
   .home h1 {
     font-size:10vw;
   }
@@ -429,6 +435,9 @@ a {
   }
   .home h3 {
     font-size: 4vw;
+  }
+  .home .img2 {
+    width:20vw;
   }
   h2 {
     font-size: 8vw;
