@@ -46,22 +46,22 @@ a {
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 5vh;
-  height: 80vh;
+  top: 10vh;
+  height: 70vh;
   justify-content: space-between;
   margin: 3vw;
   font-family: 'Vidaloka', serif;
 }
 
 .nav a {
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   -webkit-transition: font-size 1s;
    -moz-transition: font-size 1s;
      -o-transition: font-size 1s;
         transition: font-size 1s;
 }
 .nav a:hover {
-  font-size: 2.7vw !important;
+  font-size: 2.5vw !important;
 }
 
 #n1 {
@@ -376,13 +376,10 @@ a {
     height:auto;
   }
   .nav a {
-    font-size: 2.7vw !important;
+    font-size: 2.5vw !important;
   }
   .nav a:hover {
-    font-size: 3.7vw !important;
-  }
-  .overlay p{
-    font-size: 1.5vw;
+    font-size: 3.5vw !important;
   }
 
   .bbuy {
@@ -465,10 +462,10 @@ a {
     font-size: 3vw;
   }
   .nav a {
-    font-size: 4.7vw !important;
+    font-size: 4.5vw !important;
   }
   .nav a:hover {
-    font-size: 5.7vw !important;
+    font-size: 5.5vw !important;
   }
   .img {
     width:10vw;
