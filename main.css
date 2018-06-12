@@ -98,8 +98,7 @@ a {
   margin: 2vh 2vw;
   margin-bottom:20vh;
   flex-direction: row;
-  width: 80vw;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
