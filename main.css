@@ -95,8 +95,7 @@ a {
     flex-direction: column;
 }
 .row {
-  margin-left: 2vw;
-  margin-bottom: 2vh;
+  margin: 2vh 2vw;
   flex-direction: row;
   width: 80vw;
   justify-content: flex-start;
