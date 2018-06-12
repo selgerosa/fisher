@@ -221,8 +221,7 @@ a {
   position: absolute;
   z-index: -1;
   width:5vw;
-  /* TODO: put it back */
-  visibility: hidden;
+
 }
 
 /* home */
@@ -267,8 +266,9 @@ a {
 }
 
 #i07 {
-  top:5vh;
-  left:60vw;
+  top:0vh;
+  left:40vw;
+  width: 20vw;
 }
 
 #i013 {
@@ -289,6 +289,12 @@ a {
 #i05 {
   top:285vh;
   left:15vw;
+}
+
+#i011 {
+  top:220vh;
+  left:0vw;
+  width:20vw;
 }
 
 /* books */
