@@ -27,7 +27,7 @@ h3 {
 p {
   margin:0;
   margin-bottom: 2vh;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 img {
   align-self:center;
@@ -54,14 +54,14 @@ a {
 }
 
 .nav a {
-  font-size: 2vw;
+  font-size: 1.7vw;
   -webkit-transition: font-size 1s;
    -moz-transition: font-size 1s;
      -o-transition: font-size 1s;
         transition: font-size 1s;
 }
 .nav a:hover {
-  font-size: 3vw !important;
+  font-size: 2.7vw !important;
 }
 
 #n1 {
@@ -104,7 +104,7 @@ a {
 }
 
 .col {
-  margin-left:2vw;
+  margin-left:6vw;
   width: 50vw;
   align-items: center;
 }
@@ -114,16 +114,16 @@ a {
   text-align: center;
 }
 .home h1 {
-  font-size: 4vw;
+  font-size: 3.7vw;
 }
 .home h2 {
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 .home h3 {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
 }
 .home .img2 {
-  width: 20vw;
+  width: 17vw;
 }
 .home .row{
   justify-content: space-around;
@@ -147,6 +147,12 @@ a {
 }
 .qastyle {
   justify-content:space-around;
+}
+.qa1 {
+  margin-top:10vh;
+}
+.qa2 {
+  margin-bottom: 10vh;
 }
 .qastyle .col{
   width: 25vw;
@@ -185,13 +191,19 @@ a {
   display: block;
 }
 
+.bbuy {
+  position: absolute;
+}
 .bright,.bleft {
   position: absolute;
   bottom: 2vh;
   margin: 0vh 2vw;
 }
 .bright {
-  right:0;
+  right:10vw;
+}
+.bleft {
+  left:10vw;
 }
 .contact .row {
   justify-content: space-around;
@@ -201,6 +213,8 @@ a {
   position: absolute;
   z-index: -1;
   width:5vw;
+  /* TODO: put it back */
+  visibility: hidden;
 }
 
 /* home */
@@ -322,7 +336,7 @@ a {
   }
 
   p {
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
   .img {
     width: 7vw;
@@ -341,10 +355,10 @@ a {
     height:auto;
   }
   .nav a {
-    font-size: 3vw !important;
+    font-size: 2.7vw !important;
   }
   .nav a:hover {
-    font-size: 4vw !important;
+    font-size: 3.7vw !important;
   }
   .overlay p{
     font-size: 1.5vw;
@@ -405,7 +419,7 @@ a {
     font-size: 6vw;
   }
   p {
-    font-size: 4vw;
+    font-size: 3.7vw;
   }
   .row,.col{
     width: 90vw !important;
@@ -420,10 +434,10 @@ a {
     font-size: 3vw;
   }
   .nav a {
-    font-size: 5vw !important;
+    font-size: 4.7vw !important;
   }
   .nav a:hover {
-    font-size: 6vw !important;
+    font-size: 5.7vw !important;
   }
   .img {
     width:10vw;
