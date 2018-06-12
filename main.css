@@ -229,14 +229,11 @@ html.fp-enabled,
   margin:0;
   align-items: center;
   justify-content: center;
-  display: flex;
 }
 .parent {
   flex-direction: row;
 }
-.child {
-  flex-direction: column;
-}
+
 /* general style */
 h1,h2,h3 {
   font-family: 'Vidaloka', serif;
@@ -269,8 +266,6 @@ a {
 
 /* nav style */
 .nav {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -318,7 +313,7 @@ a {
   margin-left:10vw;
   height: 100vh;
 }
-.outer,.row,.col,.contact a,.book_modal,.home, .about, .work, .books, .contact {
+.outer,.row,.col,.contact a,.book_modal,.home, .about, .work, .books, .contact,.nav,.child,.parent {
     display: flex;
     flex-direction: column;
 }
