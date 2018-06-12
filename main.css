@@ -135,6 +135,9 @@ a {
 .about .img2 {
   width: 35vw;
 }
+.about .row {
+  margin-bottom: 5vh;
+}
 
 /* work style */
 .work h3 {
@@ -152,10 +155,10 @@ a {
   justify-content:space-around;
 }
 .qa1 {
-  margin-top:10vh;
+  margin-top:5vh;
 }
 .qa2 {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .qastyle .col{
   width: 25vw;
@@ -196,6 +199,8 @@ a {
 
 .bbuy {
   position: absolute;
+  left:29vw;
+  bottom: 30vh;
 }
 .bright,.bleft {
   position: absolute;
