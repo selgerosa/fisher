@@ -156,6 +156,8 @@ a {
 }
 .qastyle {
   justify-content:space-around;
+  width:60vw;
+  margin-left: 10vw;
 }
 .qa1 {
   margin-top:5vh;
@@ -165,6 +167,8 @@ a {
 }
 .qastyle .col{
   width: 25vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 .qastyle h3 {
   font-size: 1.2vw;
@@ -224,7 +228,8 @@ a {
   position: absolute;
   z-index: -1;
   width:5vw;
-
+  /* TODO: take her out */
+  visibility: hidden;
 }
 
 /* home */
