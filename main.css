@@ -373,6 +373,7 @@ a {
     flex-direction: row;
     width:90vw;
     height:auto;
+    top:0;
   }
   .nav a {
     font-size: 2.5vw !important;
