@@ -181,9 +181,9 @@ a {
 .books .img2 {
   width: 25vw;
 }
-.book_modal .img2 {
+/* .book_modal .img2 {
   border:10px solid #FFC72C;
-}
+} */
 
 .buy_button {
   width: auto;
