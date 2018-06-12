@@ -96,6 +96,7 @@ a {
 }
 .row {
   margin: 2vh 2vw;
+  margin-bottom:20vh;
   flex-direction: row;
   width: 80vw;
   justify-content: flex-start;
@@ -103,7 +104,7 @@ a {
 }
 
 .col {
-  margin-left:6vw;
+  margin: 0;
   width: 50vw;
   align-items: center;
 }
@@ -127,9 +128,7 @@ a {
 .home .img2 {
   width: 10vw;
 }
-.home .col {
-  margin-left: 0;
-}
+
 .home .row{
   justify-content: space-around;
 }
@@ -137,10 +136,9 @@ a {
 .about .img2 {
   width: 35vw;
 }
-.about .row {
-  margin-bottom: 20vh;
+.about .img3 {
+  width:15vw;
 }
-
 /* work style */
 .work h3 {
   color:#10069F;
@@ -160,11 +158,11 @@ a {
   margin-left: 10vw;
 }
 .qa1 {
-  margin-top:5vh;
+  margin-bottom:2vh;
 }
-.qa2 {
+/* .qa2 {
   margin-bottom: 5vh;
-}
+} */
 .qastyle .col{
   width: 25vw;
   margin-left: 2vw;
@@ -180,6 +178,7 @@ a {
 /* books style */
 .books .img2 {
   width: 25vw;
+  margin-right:5vw;
 }
 /* .book_modal .img2 {
   border:10px solid #FFC72C;
@@ -206,7 +205,7 @@ a {
 
 .bbuy {
   position: absolute;
-  left:29vw;
+  left:30vw;
   bottom: 30vh;
 }
 .bright,.bleft {
