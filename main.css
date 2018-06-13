@@ -229,123 +229,74 @@ a {
 }
 
 /* home */
-/* #i08 {
-  left: 6vw;
-  top:16vh;
-}
-
-#i02 {
-  left:70vw;
-  top:63vh;
-}
-
-#i023 {
-  top:90vh;
-  left:25vw;
-} */
-#i024 {
+#i00 {
   left:0vw;
   top:30vh;
 }
-#i025 {
+#i01 {
   left:75vw;
   top:90vh;
 }
-#i026 {
+#i02 {
   left:5vw;
   top:80vh;
 }
-#i027 {
+#i03 {
   left:70vw;
   top:20vh;
 }
 /* about */
 
-#i09 {
-  top:5vh;
-  left:40vw;
-}
-
-#i01 {
-  left:70vw;
-  top:190vh;
-}
-
-
-#i03 {
-  top:85vh;
-  left:5vw;
-}
-
 
 /* work */
-#i021 {
-  left:10vw;
-  top:87vh;
-}
-
-#i07 {
-  top:0vh;
-  left:40vw;
-}
-
-#i013 {
-  top:280vh;
-  left:5vw;
-}
-
-#i015 {
-  left:78vw;
-  top:120vh;
-}
-
-#i00 {
-  top:270vh;
-  left:65vw;
+#i04 {
+  width:17vw;
+  left:17vw;
+  top:-12vh;
 }
 
 #i05 {
-  top:285vh;
-  left:15vw;
+  left:70vw;
+  top:102vh;
+}
+
+#i06 {
+  top:290vh;
+  left:60vw;
+}
+
+#i07 {
+  top:350vh;
+  left:20vw;
+}
+
+#i08 {
+  top:390vh;
+  left:45vw;
+}
+
+#i09 {
+  top:480vh;
+  left:20vw;
+}
+
+#i010 {
+    top:540vh;
+    left:65vw;
 }
 
 #i011 {
-  top:185vh;
+  top:625vh;
   left:30vw;
+  width:17vw;
 }
 
 /* books */
 
-#i022 {
-  top:10vh;
-  left:72vw;
-}
-
-#i014 {
-  top:3vh;
-  left:76vw;
-}
-
-#i019 {
-  top:90vh;
-  left: 30vw;
-}
 
 /* contact */
 
-#i06 {
-  top:78vh;
-  left:10vw;
-}
 
-#i016 {
-  top:08vh;
-  left:70vw;
-}
-#i010 {
-  top:15vh;
-  left:75vw;
-}
 
 @keyframes fadein {
     0% {
@@ -393,43 +344,6 @@ a {
     font-size: 3.3vw !important;
   }
 
-
-  #i03 {
-    top:55vh;
-  }
-
-  #i09 {
-    top:130vh;
-  }
-  #i013 {
-    left:0vw;
-    top:75vh;
-  }
-
-  #i021 {
-    top:50vh;
-  }
-  #i00 {
-    left:0vw;
-    top:190vh;
-  }
-
-  #i015 {
-    left:85vw;
-  }
-
-  #i014 {
-    left:70vw;
-  }
-
-  #i019 {
-    top:90vh;
-    left:20vw;
-  }
-  /* books */
-  #i022 {
-    left:80vw;
-  }
 }
 
 @media all and (max-width:500px) {
@@ -504,29 +418,6 @@ a {
     font-size: 3vw;
   }
 
-  #i021,#i013,#i00,#i09 {
-    visibility: hidden;
-  }
-  #i015 {
-    top: 80vh;
-  }
-  #i05 {
-    top:264vh;
-    left:30vw;
-  }
-  #i00 {
-    left:10vw;
-  }
-  #i021 {
-    top: 15vh;
-  }
-
-  #i016 {
-    left:60vw;
-  }
-  #i010 {
-    top:25vh;
-  }
 }
 
 
