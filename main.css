@@ -334,7 +334,7 @@ a {
 @media (max-width:768px) {
 
   .home, .about, .work, .books, .contact {
-    margin:20vh 0;
+    margin:20vh 5vw;
     width: 90vw
   }
 .home {
@@ -374,12 +374,12 @@ a {
 
 }
 
-@mediad (max-width:500px) {
+@media (max-width:500px) {
   .home, .about, .work, .books, .contact {
-    margin:10vh
+    margin:10vh 0
   }
   .row {
-    margin-bottom: 10vh
+    margin-bottom: 10vh 0
   }
   .home {
     margin-top:0
