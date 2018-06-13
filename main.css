@@ -51,8 +51,11 @@ a {
   justify-content: space-between;
   margin: 3vw;
   font-family: 'Vidaloka', serif;
+  background-color: white;
 }
-
+.nav p {
+  margin-top:2vh;
+}
 .nav a {
   font-size: 1.5vw;
   -webkit-transition: font-size 1s;
@@ -89,6 +92,7 @@ a {
   width: 85vw;
   margin-left:10vw;
   height: 100vh;
+  padding: 30vh 0vw;
 }
 .outer,.row,.col,.contact a,.book_modal,.home, .about, .work, .books, .contact,.nav,.child,.parent {
     display: flex;
@@ -256,10 +260,11 @@ a {
 }
 /* about */
 
-
+#i04,#i011 {
+  width:17vw;
+}
 /* work */
 #i04 {
-  width:17vw;
   left:17vw;
   top:-12vh;
 }
@@ -297,7 +302,6 @@ a {
 #i011 {
   top:625vh;
   left:30vw;
-  width:17vw;
 }
 
 /* books */
@@ -356,6 +360,9 @@ a {
 }
 
 @media all and (max-width:500px) {
+  .home, .about, .work, .books, .contact {
+    padding:15vh 0;
+  }
   .home {
     margin-top:20vh;
   }
@@ -392,17 +399,19 @@ a {
   .qastyle p{
     font-size: 3vw;
   }
+  .nav {
+    margin: 0 3vw;
+  }
   .nav a {
     font-size: 4.5vw !important;
   }
   .nav a:hover {
     font-size: 5.3vw !important;
   }
-  .img {
-    width:7vw;
-  }
+
   .img3 {
     visibility: hidden;
+    position: fixed;
   }
   .about .img2 {
     left:0;
@@ -420,7 +429,9 @@ a {
     margin-top: 5vh;
     height: 81vh;
   }
-
+  .book_modal .row {
+    justify-content: center;
+  }
   .buy_button {
     padding:1vh;
     margin: 1vh;
@@ -432,6 +443,17 @@ a {
   .bright {
     left:40vw;
   }
+  .img {
+    width:10vw;
+    visibility: hidden;
+  }
+  .home .img, #i04,#i011 {
+    visibility: visible;
+
+  }
+  #i04,#i011 {
+    width:50vw;
+}
 
 }
 
