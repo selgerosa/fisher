@@ -102,6 +102,7 @@ a {
 .row {
   margin: 2vh 2vw;
   margin-bottom:20vh;
+  justify-content: center;
   flex-direction: row
 }
 
@@ -445,7 +446,7 @@ a {
     margin-top: 5vh;
     height: 81vh
   }
-  .parent,.child,.book_modal .row {
+  .parent,.child {
     justify-content: center;
     align-items: center
   }
