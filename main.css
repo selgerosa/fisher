@@ -130,6 +130,7 @@ a {
 .home .row{
   justify-content: space-around;
   margin:0;
+  margin-top:10vh;
 }
 /* about style */
 .about .img2 {
