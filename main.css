@@ -226,7 +226,7 @@ a {
   position: absolute;
   z-index: -1;
   width:5vw;
-
+  visibility: hidden;
 }
 
 /* home */
@@ -356,7 +356,7 @@ a {
     font-size: 1.8vw;
   }
   .img {
-    width: 7vw;
+    width: 5vw;
   }
   .row {
     width: 90vw;
@@ -462,7 +462,7 @@ a {
     font-size: 5.3vw !important;
   }
   .img {
-    width:10vw;
+    width:7vw;
   }
 
   .about .img2 {
