@@ -222,6 +222,13 @@ a {
 }
 .contact .row {
   justify-content: space-around;
+  margin-top:5vh;
+}
+.contact .col {
+  width:80vw;
+}
+.contact h2 {
+  text-align: center;
 }
 /* glyphs */
 .img {
@@ -418,6 +425,12 @@ a {
     padding:1vh;
     margin: 1vh;
     font-size: 3vw;
+  }
+  .bleft {
+    left:25vw;
+  }
+  .bright {
+    left:40vw;
   }
 
 }
