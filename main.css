@@ -326,15 +326,17 @@ a {
 @media all and (max-width:768px) {
 
   .home, .about, .work, .books, .contact {
-    margin-left:0vw;
+    margin:20vh 0;
     width: 90vw;
   }
-
+.home {
+  margin-top: 0;
+}
   p {
     font-size: 1.8vw;
   }
   .img {
-    width: 5vw;
+    width: 10vw;
   }
   .row {
     width: 90vw;
@@ -357,6 +359,9 @@ a {
   }
   .nav a:hover {
     font-size: 3.3vw !important;
+  }
+  #i010 {
+    visibility: hidden;
   }
 
 }
@@ -445,7 +450,6 @@ a {
     left:40vw;
   }
   .img {
-    width:10vw;
     visibility: hidden;
   }
   .home .img, #i04,#i011 {
