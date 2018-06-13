@@ -91,8 +91,7 @@ a {
 .home, .about, .work, .books, .contact {
   width: 85vw;
   margin-left:10vw;
-  height: 100vh;
-  padding: 30vh 0vw;
+  margin-bottom:30vh;
 }
 .outer,.row,.col,.contact a,.book_modal,.home, .about, .work, .books, .contact,.nav,.child,.parent {
     display: flex;
@@ -132,10 +131,12 @@ a {
   width: 10vw;
 }
 
+.home {
+  margin-top:-5vh;
+}
 .home .row{
   justify-content: space-around;
   margin:0;
-  margin-top:10vh;
 }
 /* about style */
 .about .img2,.work .img4 {
@@ -215,7 +216,6 @@ a {
 
 .bright,.bleft {
   position: absolute;
-  bottom: 20vh;
   margin: 0vh 2vw;
 }
 .bright {
@@ -266,7 +266,7 @@ a {
 /* work */
 #i04 {
   left:17vw;
-  top:-12vh;
+  top:-25vh;
 }
 
 #i05 {
@@ -300,7 +300,7 @@ a {
 }
 
 #i011 {
-  top:625vh;
+  top:605vh;
   left:30vw;
 }
 
@@ -349,6 +349,8 @@ a {
     width:90vw;
     height:auto;
     top:0;
+    margin: 0 3vw;
+
   }
   .nav a {
     font-size: 2.5vw !important;
@@ -361,10 +363,10 @@ a {
 
 @media all and (max-width:500px) {
   .home, .about, .work, .books, .contact {
-    padding:15vh 0;
+    margin:15vh 0;
   }
   .home {
-    margin-top:20vh;
+    margin-top:0;
   }
   .home h1 {
     font-size:10vw;
@@ -399,9 +401,7 @@ a {
   .qastyle p{
     font-size: 3vw;
   }
-  .nav {
-    margin: 0 3vw;
-  }
+
   .nav a {
     font-size: 4.5vw !important;
   }
@@ -431,6 +431,7 @@ a {
   }
   .book_modal .row {
     justify-content: center;
+    align-items: center;
   }
   .buy_button {
     padding:1vh;
@@ -454,20 +455,8 @@ a {
   #i04,#i011 {
     width:50vw;
 }
-
+#i011 {
+  top:550vh;
 }
-
-
-@media all and (min-width:1200px) {
-
-  /* .nav a {
-    font-size: 5vw;
-  } */
-}
-@media all and (min-width:2000px) {
-
-  .about .img2 {
-    width: 65vh;
-  }
 
 }
