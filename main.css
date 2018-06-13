@@ -300,10 +300,24 @@ a {
 }
 
 #i011 {
-  top:605vh;
+  top:570vh;
   left:30vw;
 }
 
+#i012 {
+  top:70vh;
+  left:60vw;
+}
+
+#i013 {
+  top:10vh;
+  left:50vw;
+}
+
+#i014 {
+  top:60vh;
+  left:10vw;
+}
 /* books */
 
 
@@ -452,15 +466,19 @@ a {
   .img {
     visibility: hidden;
   }
-  .home .img, #i04,#i011 {
+  .home .img, #i04,#i011,#i013 {
     visibility: visible;
 
   }
-  #i04,#i011 {
+  #i04,#i011,#i013 {
     width:50vw;
 }
 #i011 {
-  top:550vh;
+  top:580vh;
+}
+#i013 {
+  top:80vh;
+  left:20vw;
 }
 
 }
