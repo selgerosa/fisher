@@ -382,7 +382,7 @@ a {
 
 @media all and (max-width:500px) {
   .home, .about, .work, .books, .contact {
-    margin:15vh 0;
+    margin:10vh 0;
   }
   .home {
     margin-top:0;
@@ -474,7 +474,7 @@ a {
     width:50vw;
 }
 #i011 {
-  top:580vh;
+  top:560vh;
 }
 #i013 {
   top:80vh;
