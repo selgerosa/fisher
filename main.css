@@ -225,12 +225,11 @@ a {
 .img {
   position: absolute;
   z-index: -1;
-  width:5vw;
-  visibility: hidden;
+  width:7vw;
 }
 
 /* home */
-#i08 {
+/* #i08 {
   left: 6vw;
   top:16vh;
 }
@@ -243,8 +242,23 @@ a {
 #i023 {
   top:90vh;
   left:25vw;
+} */
+#i024 {
+  left:0vw;
+  top:30vh;
 }
-
+#i025 {
+  left:70vw;
+  top:90vh;
+}
+#i026 {
+  left:5vw;
+  top:80vh;
+}
+#i027 {
+  left:75vw;
+  top:15vh;
+}
 /* about */
 
 #i09 {
@@ -464,7 +478,9 @@ a {
   .img {
     width:7vw;
   }
-
+  .img3 {
+    visibility: hidden;
+  }
   .about .img2 {
     left:0;
     width: 70vw;
