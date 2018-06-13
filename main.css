@@ -384,6 +384,9 @@ a {
   .home, .about, .work, .books, .contact {
     margin:10vh 0;
   }
+  .row {
+    margin-bottom: 10vh;
+  }
   .home {
     margin-top:0;
   }
@@ -474,7 +477,7 @@ a {
     width:50vw;
 }
 #i011 {
-  top:560vh;
+  top:540vh;
 }
 #i013 {
   top:80vh;
