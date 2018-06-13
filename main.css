@@ -177,7 +177,9 @@ a {
 }
 
 /* books style */
-
+.books h3 {
+  text-align: center;
+}
 .books .img2 {
   max-height: 50vh;
   margin-right:5vw;
@@ -185,7 +187,7 @@ a {
 .book_modal .row {
   margin-bottom: 0vh;
   width: auto;
-
+  align-items: flex-start;
 }
 .buy_button {
   width: auto;
@@ -213,10 +215,10 @@ a {
   margin: 0vh 2vw;
 }
 .bright {
-  right:10vw;
+  left:15vw;
 }
 .bleft {
-  left:10vw;
+  left:5vw;
 }
 .contact .row {
   justify-content: space-around;
